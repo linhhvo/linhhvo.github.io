@@ -37,8 +37,6 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	/* margin: 0;
-	padding: 0; */
 	overflow: hidden;
 	background: var(--background);
 	background-repeat: no-repeat;

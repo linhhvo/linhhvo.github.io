@@ -5,12 +5,10 @@
 	width: clamp(200px, 15vmax, 400px);
 	margin: min(-32px, -1.25vmax) 0;
 	color: var(--secondary-text);
-	/* z-index: 10; */
 }
 
 .container ul {
-	margin: 0;
-	padding: 2.2em 0 0;
+	padding-top: 2.2em;
 	text-align: center;
 	font-size: clamp(1rem, 0.75vmax, 2rem);
 }
