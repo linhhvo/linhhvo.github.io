@@ -9,13 +9,13 @@ export const Project = () => {
     <div className={classes.container}>
       <img src={thumbnail} alt='thumbnail for project name' width='135px' height='135px' />
 
-      <h2>Project name</h2>
+      <div className={classes.detailsContainer}>
+        <h2>Project name</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <Skills />
+      </div>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-
-      <Skills />
-
-      <div>
+      <div className={classes.btnContainer}>
         <Button text='view demo' />
         <Button text='source code' />
       </div>

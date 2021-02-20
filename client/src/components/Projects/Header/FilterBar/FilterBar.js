@@ -9,7 +9,7 @@ export const FilterBar = () => {
     <div className={classes.container}>
       <button className={classes.filterBtn} aria-label="dropdown-filter">Filter by <ArrowDown /></button>
 
-      <FilterList />
+      {/* <FilterList /> */}
     </div>
   );
 };

@@ -3,10 +3,16 @@
 	justify-content: space-between;
 	flex-direction: column;
 	width: 65%;
-	margin: auto;
-	height: 85%;
+	margin: 2.75rem auto 0;
+	height: 90%;
 }
 
 .projectsContainer {
-	overflow: scroll;
+	overflow-y: scroll;
+	padding-right: 1.7rem;
+	width: 100%;
+}
+
+.projectsContainer::-webkit-scrollbar {
+	display: none;
 }

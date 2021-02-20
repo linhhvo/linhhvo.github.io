@@ -8,8 +8,37 @@
 	box-shadow: 16px 16px 14px rgba(0, 0, 0, 0.1);
 	border-radius: 40px;
 	padding: 1rem 2rem;
+	margin-bottom: 1.5rem;
+	align-items: center;
 }
 
 .container img {
 	border-radius: 20px;
+}
+
+.detailsContainer {
+	margin: 0 1.75rem;
+}
+.detailsContainer h2 {
+	color: #00235e;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-weight: 400;
+	font-size: 1.75rem;
+}
+
+.detailsContainer p {
+	color: #00235e;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	font-size: 0.95rem;
+	margin: 0.15rem 0 0.3rem;
+}
+
+.btnContainer {
+	height: 135px;
+	width: 180px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
