@@ -1,12 +1,12 @@
 import React from 'react';
 
 import classes from './Profile.module.css';
-import profile_pic from '../assets/profile.png';
+import profile_pic from '../../assets/profile.png';
 
-import {Github} from './icons/Github';
-import {Linkedin} from './icons/Linkedin';
-import {Email} from './icons/Email';
-import {ThemeLight} from './icons/ThemeLight';
+import {Github} from '../Icons/Github';
+import {Linkedin} from '../Icons/Linkedin';
+import {Email} from '../Icons/Email';
+import {ThemeLight} from '../Icons/ThemeLight';
 
 export const Profile = () => {
   return (

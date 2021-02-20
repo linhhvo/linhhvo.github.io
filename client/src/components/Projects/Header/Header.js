@@ -1,16 +1,13 @@
 import React from 'react';
-
+import classes from './Header.module.css';
 import {FilterBar} from './FilterBar';
-import {Project} from './Project';
 
-export const Projects = () => {
+export const Header = () => {
   return (
-    <div>
+    <div className={classes.container}>
       <h1>Projects</h1>
 
       <FilterBar />
-
-      <Project />
     </div>
   );
 };
