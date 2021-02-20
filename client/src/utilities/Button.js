@@ -1,9 +1,8 @@
 import React from 'react';
+import classes from './Button.module.css';
 
 export const Button = (props) => {
   return (
-    <div>
-      <button>{props.text}</button>
-    </div>
+    <button className={classes.button}>{props.text}</button>
   );
 };

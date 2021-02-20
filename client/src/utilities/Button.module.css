@@ -1,0 +1,12 @@
+.button {
+	width: 100%;
+	background: linear-gradient(94.8deg, #433670 0.97%, #2c4a79 103.97%, #1a5780 103.98%);
+	backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: none;
+	color: rgba(255, 255, 255, 0.95);
+	font-weight: 200;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	padding: 0.6rem 0;
+}

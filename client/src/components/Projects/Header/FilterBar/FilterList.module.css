@@ -5,6 +5,7 @@
 	width: 16rem;
 	margin: -2rem 0;
 	color: #052842;
+	z-index: 8;
 }
 
 .container ul {
