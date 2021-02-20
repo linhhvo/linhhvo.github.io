@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Header.module.css';
-import {FilterBar} from './FilterBar';
+import {FilterBar} from './FilterBar/FilterBar';
 
 export const Header = () => {
   return (

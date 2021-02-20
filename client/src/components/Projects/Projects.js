@@ -8,7 +8,7 @@ export const Projects = () => {
     <div>
       <Header />
 
-      {/* <Project /> */}
+      <Project />
     </div>
   );
 };
