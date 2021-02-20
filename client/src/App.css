@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
+	display: flex;
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ellipse-1 {
+	position: absolute;
+	width: 1019px;
+	height: 1012px;
+	left: calc(50% - 1019px / 2 - 642.5px);
+	top: calc(50% - 1012px / 2 - 107px);
+	background: linear-gradient(180deg, #082c46 0%, #382b67 100%);
+	filter: blur(250px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ellipse-2 {
+	position: absolute;
+	width: 1019px;
+	height: 1012px;
+	left: calc(50% - 1019px / 2 + 717.5px);
+	top: calc(50% - 1012px / 2 - 506px);
+	background: linear-gradient(180deg, #082c46 0%, #271a58 90%);
+	filter: blur(250px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ellipse-3 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: 7%;
+	top: 5%;
+
+	background: linear-gradient(
+		0.59deg,
+		rgba(255, 255, 255, 0.04) 17.24%,
+		rgba(255, 255, 255, 0.295) 96.18%
+	);
+	backdrop-filter: blur(50px);
+
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.ellipse-4 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: 50%;
+	top: 15%;
+
+	background: linear-gradient(113.42deg, #ffffff91 0%, rgba(96, 91, 124, 0.29) 78.65%);
+	backdrop-filter: blur(60px);
+
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ellipse-5 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: calc(50% - 471px / 2 + 656.5px);
+	top: calc(50% - 458px / 2 + 274px);
+
+	background: linear-gradient(113.42deg, #ffffffbb 0%, rgba(96, 91, 124, 0.16) 78.65%);
+	backdrop-filter: blur(100px);
+
+	/* Note: backdrop-filter has minimal browser support */
+	border-radius: 100%;
 }
