@@ -1,11 +1,12 @@
 import React from 'react';
+import classes from './Project.module.css';
 import thumbnail from '../../assets/thumbnail.png';
 import {Skills} from './Skills';
 import {Button} from '../../utilities/Button';
 
 export const Project = () => {
   return (
-    <div>
+    <div className={classes.container}>
       <img src={thumbnail} alt='thumbnail for project name' width='135px' height='135px' />
 
       <h2>Project name</h2>

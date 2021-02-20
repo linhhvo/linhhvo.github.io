@@ -6,13 +6,12 @@ export const FilterList = () => {
     <div className={classes.container}>
       <ul>
         <li>Show All</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Sass</li>
-        <li>Bootstrap</li>
+        <li>React</li>
+        <li>MongoDB</li>
+        <li>NodeJS</li>
+        <li>ExpressJS</li>
         <li>Python</li>
-        <li>JavaScript</li>
-        <li>API</li>
+        <li>Bootstrap</li>
       </ul>
     </div>
   );

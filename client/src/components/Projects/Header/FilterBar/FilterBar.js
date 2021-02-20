@@ -7,8 +7,7 @@ import {FilterList} from './FilterList';
 export const FilterBar = () => {
   return (
     <div className={classes.container}>
-      <button aria-label="dropdown-filter">Filter by</button>
-      <ArrowDown />
+      <button className={classes.filterBtn} aria-label="dropdown-filter">Filter by <ArrowDown /></button>
 
       <FilterList />
     </div>
