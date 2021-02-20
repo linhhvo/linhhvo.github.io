@@ -24,3 +24,7 @@
 	width: 1rem;
 	height: 0.6rem;
 }
+
+.filterBtn path {
+	fill: rgba(67, 54, 112, 0.85);
+}

@@ -1,0 +1,16 @@
+.container {
+	display: flex;
+	align-items: center;
+	padding-top: 0.25rem;
+}
+
+/* .nodeSvg {
+	width: auto !important;
+} */
+
+.container svg {
+	padding-right: 0.5rem;
+	width: auto;
+	height: 20px;
+	fill: #322462;
+}
