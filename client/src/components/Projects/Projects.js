@@ -9,9 +9,12 @@ export const Projects = () => {
     <div className={classes.container}>
       <Header />
 
-      <Project />
-      <Project />
-      <Project />
+      <div className={classes.projectsContainer}>
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </div>
     </div>
   );
 };

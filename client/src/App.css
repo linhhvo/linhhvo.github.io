@@ -11,6 +11,7 @@
 	top: calc(50% - 1012px / 2 - 107px);
 	background: linear-gradient(180deg, #082c46 0%, #382b67 100%);
 	filter: blur(250px);
+	z-index: -3;
 }
 
 .ellipse-2 {
@@ -21,6 +22,7 @@
 	top: calc(50% - 1012px / 2 - 506px);
 	background: linear-gradient(180deg, #082c46 0%, #271a58 90%);
 	filter: blur(250px);
+	z-index: -3;
 }
 
 .ellipse-3 {
@@ -29,14 +31,13 @@
 	height: 28rem;
 	left: 7%;
 	top: 5%;
-
+	z-index: -2;
 	background: linear-gradient(
 		0.59deg,
 		rgba(255, 255, 255, 0.04) 17.24%,
 		rgba(255, 255, 255, 0.295) 96.18%
 	);
 	backdrop-filter: blur(50px);
-
 	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 100%;
 }
@@ -47,7 +48,7 @@
 	height: 28rem;
 	left: 50%;
 	top: 15%;
-
+	z-index: -2;
 	background: linear-gradient(113.42deg, #ffffff91 0%, rgba(96, 91, 124, 0.29) 78.65%);
 	backdrop-filter: blur(60px);
 
@@ -61,7 +62,7 @@
 	height: 28rem;
 	left: calc(50% - 471px / 2 + 656.5px);
 	top: calc(50% - 458px / 2 + 274px);
-
+	z-index: -2;
 	background: linear-gradient(113.42deg, #ffffffbb 0%, rgba(96, 91, 124, 0.16) 78.65%);
 	backdrop-filter: blur(100px);
 
