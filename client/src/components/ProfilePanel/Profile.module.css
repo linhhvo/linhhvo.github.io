@@ -2,6 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-between;
 	width: 17rem;
 	background: linear-gradient(
 		113.42deg,
@@ -15,4 +16,37 @@
 .profilePic {
 	border-radius: 100%;
 	background-color: white;
+	display: flex;
+	margin: 5rem auto 0;
+}
+
+.name {
+	margin-top: 1.2rem;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+}
+
+.iconContainer {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.themeSwitch {
+	display: flex;
+	justify-self: right;
+	align-items: center;
+	flex-direction: column;
+	justify-self: flex-end;
+	font-size: 0.8rem;
+}
+
+.themeSwitch svg {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+.themeSwitch p {
+	margin-top: 0.3rem;
 }

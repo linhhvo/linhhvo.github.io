@@ -1,4 +1,6 @@
 body {
+	font-family: 'Poppins', sans-serif;
+	color: rgba(42, 32, 75, 0.8);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
