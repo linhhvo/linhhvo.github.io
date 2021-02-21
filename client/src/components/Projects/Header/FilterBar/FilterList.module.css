@@ -1,11 +1,11 @@
 .container {
-	background: linear-gradient(133.68deg, #958cb4 0%, #768fb9 100%);
+	background: var(--dropdown);
 	border-radius: 15px 15px 25px 25px;
 	position: absolute;
 	width: 16rem;
 	margin: -2rem 0;
-	color: #052842;
-	z-index: 8;
+	color: var(--secondary-text);
+	z-index: 15;
 }
 
 .container ul {
@@ -25,8 +25,8 @@
 }
 
 .container li:hover {
-	background: linear-gradient(133.68deg, #8d7fb6 0%, #5b7aaa 100%);
-	color: rgba(218, 218, 218, 0.705);
+	background: var(--dropdown-hover);
+	color: var(--btn-text);
 }
 
 .container li:last-child:hover {

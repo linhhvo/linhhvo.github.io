@@ -6,7 +6,7 @@ export const Skills = () => {
     <div className={classes.container}>
 
       {['reacticon', 'bootstrap', 'mongodb', 'node'].map(skill => (
-        <svg>
+        <svg key={`${skill}-icon`}>
           <use href={`#${skill}`} />
         </svg>
       ))}

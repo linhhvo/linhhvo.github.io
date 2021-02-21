@@ -20,7 +20,7 @@
 	margin: 0 1.75rem;
 }
 .detailsContainer h2 {
-	color: #00235e;
+	color: var(--secondary-text);
 	margin-block-start: 0;
 	margin-block-end: 0;
 	font-weight: 400;
@@ -28,7 +28,7 @@
 }
 
 .detailsContainer p {
-	color: #00235e;
+	color: var(--secondary-text);
 	margin-block-start: 0;
 	margin-block-end: 0;
 	font-size: 0.95rem;

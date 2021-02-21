@@ -1,0 +1,61 @@
+.ellipse1 {
+	position: absolute;
+	width: 1019px;
+	height: 1012px;
+	left: calc(50% - 1019px / 2 - 642.5px);
+	top: calc(50% - 1012px / 2 - 107px);
+	background: var(--ellipse);
+	filter: blur(250px);
+	z-index: 1;
+}
+
+.ellipse2 {
+	position: absolute;
+	width: 1019px;
+	height: 1012px;
+	left: calc(50% - 1019px / 2 + 717.5px);
+	top: calc(50% - 1012px / 2 - 506px);
+	background: var(--ellipse);
+	filter: blur(250px);
+	z-index: 1;
+}
+
+.ellipse3 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: 7%;
+	top: 5%;
+	z-index: 2;
+	background: linear-gradient(
+		0.59deg,
+		rgba(255, 255, 255, 0.04) 17.24%,
+		rgba(255, 255, 255, 0.295) 96.18%
+	);
+	backdrop-filter: blur(50px);
+	border-radius: 100%;
+}
+
+.ellipse4 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: 50%;
+	top: 15%;
+	z-index: 2;
+	background: linear-gradient(113.42deg, #ffffff91 0%, rgba(96, 91, 124, 0.29) 78.65%);
+	backdrop-filter: blur(60px);
+	border-radius: 100%;
+}
+
+.ellipse5 {
+	position: absolute;
+	width: 29rem;
+	height: 28rem;
+	left: calc(50% - 471px / 2 + 656.5px);
+	top: calc(50% - 458px / 2 + 274px);
+	z-index: 2;
+	background: linear-gradient(113.42deg, #ffffffbb 0%, rgba(96, 91, 124, 0.16) 78.65%);
+	backdrop-filter: blur(100px);
+	border-radius: 100%;
+}

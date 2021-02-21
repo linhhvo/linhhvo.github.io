@@ -11,8 +11,8 @@
 		rgba(255, 255, 255, 0.144) 100%
 	);
 	backdrop-filter: blur(80px);
-
-	/* Note: backdrop-filter has minimal browser support */
 	border-radius: 30px;
 	border: solid 2px rgba(255, 255, 255, 0.281);
+	position: relative;
+	z-index: 10;
 }

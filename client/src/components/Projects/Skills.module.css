@@ -8,5 +8,5 @@
 	width: 20px;
 	height: 20px;
 	padding-right: 0.5rem;
-	fill: #322462;
+	fill: var(--skill-icons);
 }

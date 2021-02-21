@@ -3,17 +3,17 @@
 	align-items: center;
 }
 
+.container p {
+	font-size: 18px;
+	color: var(--faded-text);
+}
+
 .container svg {
 	width: 2rem;
 	height: 2rem;
 	margin-right: 2.2rem;
 }
 
-.container path {
-	fill: currentColor;
-}
-
-.container p {
-	font-size: 18px;
-	color: rgba(35, 67, 90, 0.7);
+.container use {
+	fill: url(#gradient) currentColor;
 }
