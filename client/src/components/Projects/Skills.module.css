@@ -5,8 +5,8 @@
 }
 
 .container svg {
-	padding-right: 0.5rem;
-	width: auto;
+	width: 20px;
 	height: 20px;
+	padding-right: 0.5rem;
 	fill: #322462;
 }
