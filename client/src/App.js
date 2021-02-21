@@ -9,7 +9,7 @@ import {SkillIcons} from './components/Icons/SkillIcons';
 
 function App () {
   return (
-    <div className='container light'>
+    <div className='container dark'>
       <SocialIcons />
       <SkillIcons />
       <Background />

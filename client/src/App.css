@@ -10,12 +10,16 @@
 	--faded-text: rgba(35, 67, 90, 0.7);
 	--skill-icons: #322462;
 	--btn-text: rgba(255, 255, 255, 0.95);
+	--social-stop-1: rgba(67, 54, 112, 0.95);
+	--social-stop-2: rgba(41, 61, 94, 0.95);
+	--switch-stop-1: #ffcdb8;
+	--switch-stop-2: #bfb3ff;
 }
 
 .light {
 	--background: linear-gradient(252deg, #ca9680 0%, #7e649f 100%);
 	--ellipse: linear-gradient(180deg, #ca9680 0%, #b5a8fc 94.71%);
-	--btn: linear-gradient(95deg, rgb(197, 186, 250) 0%, #ebbba7 100%);
+	--btn: linear-gradient(95deg, rgba(197, 186, 250, 0.9) 0%, rgba(235, 187, 167, 0.9) 100%);
 	--dropdown: linear-gradient(134deg, #d5cdff 0%, #fde0d4 100%);
 	--dropdown-hover: linear-gradient(134deg, #cec4ff 0%, #ffcab4 100%);
 	--switch-icon: linear-gradient(180deg, #322462 0%, #1a5780 100%);
@@ -24,6 +28,10 @@
 	--faded-text: #8e87b3;
 	--skill-icons: #68417a;
 	--btn-text: #433670;
+	--social-stop-1: rgba(182, 174, 225, 0.95);
+	--social-stop-2: rgba(228, 173, 150, 0.95);
+	--switch-stop-1: #322462;
+	--switch-stop-2: #1a5780;
 }
 
 .container {

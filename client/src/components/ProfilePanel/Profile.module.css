@@ -45,7 +45,6 @@
 .themeSwitch svg {
 	width: 1.8rem;
 	height: 1.8rem;
-	fill: url(#dark-gradient) currentColor;
 }
 
 .themeSwitch p {

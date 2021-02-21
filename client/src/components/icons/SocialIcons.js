@@ -4,9 +4,9 @@ export const SocialIcons = () => {
   return (
     <svg width="0" height='0' style={{position: 'absolute'}}>
       <defs>
-        <linearGradient id="gradient" className='dark' gradientTransform="rotate(130)">
-          <stop offset="0%" stopColor="var(--color-stop-1)" />
-          <stop offset="80%" stopColor="var(--color-stop-2)" />
+        <linearGradient id="gradient" gradientTransform="rotate(130)">
+          <stop offset="-30%" stopColor="var(--social-stop-1)" />
+          <stop offset="100%" stopColor="var(--social-stop-2)" />
         </linearGradient>
 
         <symbol id='Linkedin' viewBox="0 0 30 30">
