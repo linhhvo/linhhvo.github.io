@@ -4,14 +4,14 @@
 }
 
 .container p {
-	font-size: 18px;
+	font-size: 2vmin;
 	color: var(--faded-text);
 }
 
 .container svg {
-	width: 2rem;
-	height: 2rem;
-	margin-right: 2.2rem;
+	width: 1.8vmax;
+	height: 1.8vmax;
+	margin-right: 2vmax;
 }
 
 .container use {

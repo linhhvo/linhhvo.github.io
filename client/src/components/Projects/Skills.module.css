@@ -1,12 +1,12 @@
 .container {
 	display: flex;
 	align-items: center;
-	padding-top: 0.25rem;
+	padding-top: 0.45vmin;
 }
 
 .container svg {
-	width: 20px;
-	height: 20px;
-	padding-right: 0.5rem;
+	width: 1.05vmax;
+	height: 2.15vmin;
+	padding-right: 0.4vmax;
 	fill: var(--skill-icons);
 }

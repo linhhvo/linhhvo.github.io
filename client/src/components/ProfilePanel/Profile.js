@@ -11,7 +11,7 @@ export const Profile = () => {
     <div className={classes.container}>
 
       <div>
-        <img className={classes.profilePic} src={profile_pic} alt="an illustration of myself" width="130px" height="130px" />
+        <img className={classes.profilePic} src={profile_pic} alt="an illustration of myself" />
         <p className={classes.name}>Linh Vo</p>
         <div className={classes.iconContainer}>
           <Social name='Github' />

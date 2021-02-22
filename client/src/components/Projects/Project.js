@@ -7,7 +7,7 @@ import {Button} from '../../utilities/Button';
 export const Project = () => {
   return (
     <div className={classes.container}>
-      <img src={thumbnail} alt='thumbnail for project name' width='135px' height='135px' />
+      <img src={thumbnail} alt='thumbnail for project name' />
 
       <div className={classes.detailsContainer}>
         <h2>Project name</h2>

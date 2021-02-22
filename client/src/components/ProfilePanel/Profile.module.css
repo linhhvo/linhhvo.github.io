@@ -3,27 +3,29 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	width: 17rem;
+	width: 14vmax;
 	background: linear-gradient(
 		113.42deg,
 		rgba(255, 255, 255, 0.432) 0%,
 		rgba(255, 255, 255, 0.158) 100%
 	);
 	border-right: solid 2px rgba(255, 255, 255, 0.082);
-	border-radius: 30px 0 0 30px;
+	border-radius: 1.5vmax 0 0 1.5vmax;
 }
 
 .profilePic {
 	border-radius: 100%;
 	background-color: white;
 	display: flex;
-	margin: 5rem auto 0;
+	margin: 8.5vmin auto 0;
+	width: 7vmax;
+	height: 7vmax;
 }
 
 .name {
-	margin-top: 1.2rem;
+	margin-top: 2.25v;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 2.25vmin;
 	text-align: center;
 }
 
@@ -39,14 +41,14 @@
 	align-items: center;
 	flex-direction: column;
 	justify-self: flex-end;
-	font-size: 0.8rem;
+	font-size: 0.7vmax;
 }
 
 .themeSwitch svg {
-	width: 1.8rem;
-	height: 1.8rem;
+	width: 1.5vmax;
+	height: 1.5vmax;
 }
 
 .themeSwitch p {
-	margin-top: 0.3rem;
+	margin-top: 0.3vmax;
 }

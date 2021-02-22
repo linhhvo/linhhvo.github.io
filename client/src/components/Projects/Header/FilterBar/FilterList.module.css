@@ -1,27 +1,28 @@
 .container {
 	background: var(--dropdown);
-	border-radius: 15px 15px 25px 25px;
+	border-radius: 1.9vmin 1.9vmin 3vmin 3vmin;
 	position: absolute;
-	width: 16rem;
-	margin: -2rem 0;
+	width: 13.5vmax;
+	margin: -3.5vmin 0;
 	color: var(--secondary-text);
 	z-index: 15;
 }
 
 .container ul {
 	margin: 0;
-	padding: 2.2rem 0 0;
+	padding: 2.2em 0 0;
 	text-align: center;
+	font-size: 1.75vmin;
 }
 
 .container li {
 	list-style: none;
-	padding: 0.1rem 0;
+	padding: 0.1em 0;
 	cursor: pointer;
 }
 
 .container li:last-child {
-	padding-bottom: 0.2rem;
+	padding-bottom: 0.2em;
 }
 
 .container li:hover {
@@ -30,6 +31,6 @@
 }
 
 .container li:last-child:hover {
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 3vmin;
+	border-bottom-right-radius: 3vmin;
 }
