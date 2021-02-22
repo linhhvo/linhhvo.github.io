@@ -41,16 +41,30 @@
 	align-items: center;
 	flex-direction: column;
 	justify-self: flex-end;
-	font-size: 0.7vmax;
+	font-size: 1.45vmin;
 }
 
 .themeSwitch svg {
-	width: 1.5vmax;
-	height: 1.5vmax;
+	width: 3vmin;
+	height: 3vmin;
 }
 
 .themeSwitch p {
 	margin-top: 0.3vmax;
 }
 
-@media (max-width: );
+@media (max-width: 650px) {
+	.container {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		border-radius: 0;
+		border: none;
+		z-index: 1000;
+		background: linear-gradient(
+			113.42deg,
+			rgba(255, 255, 255, 0.877) 0%,
+			rgba(255, 255, 255, 0.685) 100%
+		);
+	}
+}

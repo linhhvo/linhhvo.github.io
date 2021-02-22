@@ -20,7 +20,7 @@
 	.container {
 		background: none;
 		border: none;
-		min-width: 95vw;
+		min-width: 100%;
 		flex-direction: column;
 		backdrop-filter: none;
 		height: 100vh;
