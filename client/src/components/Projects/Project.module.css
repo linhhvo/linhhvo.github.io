@@ -27,19 +27,19 @@
 	margin-block-start: 0;
 	margin-block-end: 0;
 	font-weight: 400;
-	font-size: 1.45vmax;
+	font-size: 3vmin;
 }
 
 .detailsContainer p {
 	color: var(--secondary-text);
 	margin-block-start: 0;
 	margin-block-end: 0;
-	font-size: 0.8vmax;
+	font-size: 1.6vmin;
 	margin: 0.26vmin 0 0.52vmin;
 }
 
 .btnContainer {
-	height: 7.05vmax;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;

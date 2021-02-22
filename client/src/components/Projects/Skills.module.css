@@ -5,7 +5,7 @@
 }
 
 .container svg {
-	width: 1.05vmax;
+	width: 2.15vmin;
 	height: 2.15vmin;
 	padding-right: 0.4vmax;
 	fill: var(--skill-icons);
