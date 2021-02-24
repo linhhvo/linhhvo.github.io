@@ -1,6 +1,4 @@
 .hamburger {
-	/* padding: 15px 15px; */
-	/* display: inline-block; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,10 +7,7 @@
 	transition-property: opacity, filter;
 	transition-duration: 0.15s;
 	transition-timing-function: linear;
-	/* margin-top: 3.5vh; */
 	width: 100vw;
-	/* overflow: visible; */
-	/* text-align: center; */
 	position: fixed;
 	z-index: 1000;
 }

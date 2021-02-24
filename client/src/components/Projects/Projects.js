@@ -6,9 +6,6 @@ import {Project} from './Project';
 
 export const Projects = () => {
     return (
-        // <div className={classes.container}>
-        //   <Header />
-
         <div className={classes.projectsContainer}>
             <Header />
             <Project />
@@ -19,7 +16,8 @@ export const Projects = () => {
             <Project />
             <Project />
             <Project />
+            <div className={classes.lastRow}></div>
         </div>
-        // </div >
+
     );
 };

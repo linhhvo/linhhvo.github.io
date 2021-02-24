@@ -1,8 +1,6 @@
 .button {
-	/* max-width: 100px; */
 	width: 48%;
 	background: var(--btn);
-	/* backdrop-filter: blur(4px); */
 	border-radius: 0.75vmin;
 	border: none;
 	color: var(--btn-text);
@@ -10,7 +8,4 @@
 	font-size: clamp(0.75rem, 0.75vmax, 2rem);
 	font-family: 'Poppins', sans-serif;
 	padding: max(0.75vmin, 4px) max(0.75vmin, 10px);
-	/* flex-basis: 50%; */
-	/* white-space: nowrap; */
-	/* flex-grow: 1; */
 }
