@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Project.module.css';
 import thumbnail from '../../assets/thumbnail.png';
 import {Skills} from './Skills';
-import {Button} from '../../utilities/Button';
+import {Button} from '../UI/Button/Button';
 
 export const Project = () => {
   return (

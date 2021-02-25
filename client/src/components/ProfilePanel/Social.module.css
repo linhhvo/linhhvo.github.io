@@ -17,3 +17,20 @@
 .container use {
 	fill: url(#gradient) currentColor;
 }
+
+@media (max-width: 650px) {
+	.container p {
+		font-size: 6vmin;
+		color: var(--btn-text);
+		margin: 2.75vmax;
+	}
+
+	.container svg {
+		width: 7vmax;
+		height: 7vmax;
+	}
+
+	.container use {
+		fill: currentColor;
+	}
+}

@@ -19,11 +19,11 @@
 	display: flex;
 	margin: 8.5vmin auto 0;
 	width: 7vmax;
-	height: 7vmax;
+	height: auto;
 }
 
 .name {
-	margin-top: 2.25v;
+	margin: 2vmax 0;
 	font-weight: 700;
 	font-size: 2.25vmin;
 	text-align: center;
@@ -46,7 +46,7 @@
 
 .themeSwitch svg {
 	width: 3vmin;
-	height: 3vmin;
+	height: auto;
 }
 
 .themeSwitch p {
@@ -56,15 +56,37 @@
 @media (max-width: 650px) {
 	.container {
 		position: absolute;
-		height: 100%;
-		width: 100%;
+		height: 87vh;
+		width: 100vw;
 		border-radius: 0;
 		border: none;
-		z-index: 1000;
-		background: linear-gradient(
-			113.42deg,
-			rgba(255, 255, 255, 0.877) 0%,
-			rgba(255, 255, 255, 0.685) 100%
-		);
+		z-index: 100;
+		background: var(--background);
+		padding-top: 13vh;
+		color: var(--btn-text);
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.profilePic {
+		background-color: white;
+		display: flex;
+		width: 15vmax;
+	}
+
+	.subContainer {
+		transition: opacity 0.7s ease-in;
+	}
+
+	.name {
+		font-size: 8vmin;
+	}
+
+	.themeSwitch {
+		font-size: 3.75vmin;
+	}
+
+	.themeSwitch svg {
+		width: 7vmin;
 	}
 }
