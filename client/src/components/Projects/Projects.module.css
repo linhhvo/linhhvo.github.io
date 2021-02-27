@@ -1,5 +1,5 @@
 .projectsContainer {
-	overflow-y: scroll;
+	/* overflow-y: scroll; */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, max(15vmax, 28ch));
 	grid-template-rows: 10vmin repeat(auto-fit, max(15vmax, 28ch));
