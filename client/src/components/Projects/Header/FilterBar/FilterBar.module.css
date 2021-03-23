@@ -8,7 +8,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-radius: 30px;
+	border-radius: min(1.9vmin, 30px);
 	width: clamp(200px, 15vmax, 400px);
 	padding: 0.2em 1.2em;
 	border: 1px solid rgba(255, 255, 255, 0.253);

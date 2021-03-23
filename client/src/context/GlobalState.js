@@ -17,7 +17,8 @@ export const GlobalProvider = ({children}) => {
     return (
         <GlobalContext.Provider
             value={{
-
+                theme: state.theme,
+                scrollNeeded: state.scrollNeeded
             }}>
             {children}
         </GlobalContext.Provider>);
