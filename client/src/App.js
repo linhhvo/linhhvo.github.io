@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import './App.css';
 
 import {Background} from './components/Background';
@@ -7,13 +7,12 @@ import {SocialIcons} from './components/Icons/SocialIcons';
 import {SkillIcons} from './components/Icons/SkillIcons';
 import {Profile} from './components/ProfilePanel/Profile';
 import {HamburgerMenu} from './components/UI/HamburgerMenu/HamburgerMenu';
-import {GlobalProvider} from './context/GlobalState';
+import {GlobalContext} from './context/GlobalState';
 
 
 function App () {
     return (
-        // <GlobalProvider>
-        <div className='container'>
+        <div id='main' className={`container dark`}>
             <SocialIcons />
             <SkillIcons />
             <Background />
@@ -21,8 +20,6 @@ function App () {
             <Profile />
             <Dashboard />
         </div>
-        // </GlobalProvider>
-
     );
 }
 

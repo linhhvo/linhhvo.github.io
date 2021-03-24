@@ -1,4 +1,4 @@
-.dark {
+/* .dark {
 	--background: linear-gradient(252deg, #1a5780 0%, #433670 100%);
 	--ellipse: linear-gradient(180deg, #082c46 0%, #271a58 100%);
 	--btn: linear-gradient(95deg, #433670 0%, #2c4a79 100%);
@@ -33,15 +33,15 @@
 	--social-stop-2: rgba(228, 173, 150, 0.95);
 	--switch-stop-1: #322462;
 	--switch-stop-2: #1a5780;
-}
+} */
 
 body {
 	font-family: 'Poppins', sans-serif;
 	overflow: hidden;
-	background: var(--background);
-	background-repeat: no-repeat;
+	/* background: var(--background); */
+	/* background-repeat: no-repeat;
 	background-size: cover;
-	color: var(--primary-text);
+	color: var(--primary-text); */
 }
 
 * {

@@ -14,8 +14,8 @@ export const Projects = () => {
         setscrollHeight(ref.current.scrollHeight);
     });
 
-    console.log(clientHeight);
-    console.log(scrollHeight);
+    // console.log(clientHeight);
+    // console.log(scrollHeight);
 
     return (
         <ScrollBar>

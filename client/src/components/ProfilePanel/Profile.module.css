@@ -42,6 +42,7 @@
 	flex-direction: column;
 	font-size: clamp(0.75rem, 0.65vmax, 2rem);
 	margin-bottom: 2vmax;
+	cursor: pointer;
 }
 
 .themeSwitch svg {

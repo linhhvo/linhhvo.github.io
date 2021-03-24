@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 import classes from './Profile.module.css';
 import profile_pic from '../../assets/profile.png';
@@ -6,7 +6,11 @@ import profile_pic from '../../assets/profile.png';
 import {ThemeSwitch} from '../Icons/ThemeSwitch';
 import {Social} from './Social';
 
+import {GlobalContext} from '../../context/GlobalState';
+
 export const Profile = () => {
+    const {switchTheme} = useContext(GlobalContext);
+
     return (
         <div className={classes.container + ' ' + classes.active}>
             <div className={classes.burgerContainer} />
@@ -22,7 +26,7 @@ export const Profile = () => {
             </div>
 
             <div className={classes.themeSwitch}>
-                <ThemeSwitch />
+                <ThemeSwitch toggle={() => switchTheme()} />
                 <p>Enable light mode </p>
             </div>
 
