@@ -5,6 +5,7 @@
 	width: clamp(200px, 15vmax, 400px);
 	margin: min(-33px, -1.25vmax) 0;
 	color: var(--secondary-text);
+	transition: all 0.4s;
 }
 
 .container ul {
@@ -31,6 +32,13 @@
 .container li:last-child:hover {
 	border-bottom-left-radius: 3vmin;
 	border-bottom-right-radius: 3vmin;
+}
+
+.collapsed {
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	pointer-events: none;
 }
 
 @media (max-width: 650px) {

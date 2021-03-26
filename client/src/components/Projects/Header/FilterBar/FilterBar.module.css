@@ -32,6 +32,13 @@
 	fill: var(--primary-text);
 }
 
+.collapsed {
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	pointer-events: none;
+}
+
 @media (max-width: 650px) {
 	.filterBtn {
 		border-radius: 3vmin;
