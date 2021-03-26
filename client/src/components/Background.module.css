@@ -9,8 +9,8 @@
 	position: absolute;
 	width: 53%;
 	height: 94%;
-	left: calc(50% - 53% / 2 - 43%);
-	top: calc(50% - 94% / 2 - 29%);
+	left: calc(50% - 53% / 2 - 53%);
+	top: calc(50% - 94% / 2 - 11%);
 	background: var(--ellipse);
 	filter: blur(250px);
 	z-index: 1;
