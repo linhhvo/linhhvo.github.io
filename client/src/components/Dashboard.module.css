@@ -1,7 +1,15 @@
 .container {
 	width: 80%;
 	margin: auto;
+	margin-bottom: 0;
 	z-index: 10;
+}
+
+.arrow svg {
+	width: 3vmin;
+	display: flex;
+	margin: 10px auto 20px;
+	fill: var(--header-text);
 }
 
 @media (max-width: 650px) {
@@ -10,5 +18,9 @@
 		height: 100vh;
 		overflow: hidden;
 		padding-top: 10vh;
+	}
+
+	.arrow svg {
+		display: none;
 	}
 }

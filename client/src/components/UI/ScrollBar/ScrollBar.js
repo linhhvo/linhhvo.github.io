@@ -17,6 +17,7 @@ export const ScrollBar = (props) => {
         <Scrollbars
             style={{height: '90vh'}}
             renderThumbVertical={thumbVertical}
+            autoHide
         >
             {props.children}
         </Scrollbars>
