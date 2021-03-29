@@ -3,34 +3,30 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	width: 14vmax;
-	background: linear-gradient(
-		113.42deg,
-		rgba(255, 255, 255, 0.432) 0%,
-		rgba(255, 255, 255, 0.158) 100%
-	);
-	border-right: solid 2px rgba(255, 255, 255, 0.082);
-	border-radius: 1.5vmax 0 0 1.5vmax;
+	width: 16vmax;
+	background: linear-gradient(110deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.1) 100%);
+	border-right: solid 1.5px rgba(255, 255, 255, 0);
+	z-index: 2;
 }
 
 .profilePic {
 	border-radius: 100%;
 	background-color: white;
 	display: flex;
-	margin: 8.5vmin auto 0;
+	margin: 13vmin auto 0;
 	width: 7vmax;
 	height: auto;
 }
 
 .name {
-	margin: 2vmax 0;
+	margin: 1vmax 0;
 	font-weight: 700;
 	font-size: 2.25vmin;
 	text-align: center;
 }
 
 .iconContainer {
-	margin: 0;
+	margin: 3vmax 0;
 	display: flex;
 	flex-direction: column;
 }
@@ -42,6 +38,7 @@
 	flex-direction: column;
 	justify-self: flex-end;
 	font-size: 1.45vmin;
+	margin-bottom: 2vmax;
 }
 
 .themeSwitch svg {
@@ -50,7 +47,7 @@
 }
 
 .themeSwitch p {
-	margin-top: 0.3vmax;
+	margin-top: 0.7vmax;
 }
 
 @media (max-width: 650px) {
