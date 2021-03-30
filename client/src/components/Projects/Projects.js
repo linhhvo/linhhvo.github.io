@@ -5,16 +5,21 @@ import {Header} from './Header/Header';
 import {Project} from './Project';
 
 export const Projects = () => {
-  return (
-    <div className={classes.container}>
-      <Header />
+    return (
+        // <div className={classes.container}>
+        //   <Header />
 
-      <div className={classes.projectsContainer}>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-      </div>
-    </div>
-  );
+        <div className={classes.projectsContainer}>
+            <Header />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+        </div>
+        // </div >
+    );
 };

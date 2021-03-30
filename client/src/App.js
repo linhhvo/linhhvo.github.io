@@ -15,8 +15,8 @@ function App () {
             <SocialIcons />
             <SkillIcons />
             <Background />
-            {/* <Dashboard /> */}
             <Profile />
+            <Dashboard />
         </div>
 
     );

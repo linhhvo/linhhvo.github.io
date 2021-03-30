@@ -1,18 +1,18 @@
 .container {
 	background: var(--dropdown);
-	border-radius: 1.9vmin 1.9vmin 3vmin 3vmin;
+	border-radius: 1.9vmin 1.9vmin 1.75vmin 1.75vmin;
 	position: absolute;
-	width: 13.5vmax;
-	margin: -3.5vmin 0;
+	width: max(13.5vmax, 120px);
+	margin: min(-32px, -1.25vmax) 0;
 	color: var(--secondary-text);
-	z-index: 15;
+	/* z-index: 10; */
 }
 
 .container ul {
 	margin: 0;
 	padding: 2.2em 0 0;
 	text-align: center;
-	font-size: 1.75vmin;
+	font-size: clamp(1rem, 0.75vmax, 2rem);
 }
 
 .container li {

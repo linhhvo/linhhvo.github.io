@@ -4,13 +4,13 @@
 }
 
 .container p {
-	font-size: 2vmin;
+	font-size: clamp(1.12rem, 1vmax, 4rem);
 	color: var(--faded-text);
 }
 
 .container svg {
-	width: 3.75vmin;
-	height: 3.75vmin;
+	width: clamp(2rem, 3.25vmin, 4.25rem);
+	height: clamp(2rem, 3.25vmin, 4.25rem);
 	margin-right: 2vmax;
 }
 
@@ -20,15 +20,14 @@
 
 @media (max-width: 650px) {
 	.container p {
-		font-size: 6vmin;
 		color: var(--btn-text);
 		margin: 2.75vmax;
 	}
 
-	.container svg {
+	/* .container svg {
 		width: 7vmax;
 		height: 7vmax;
-	}
+	} */
 
 	.container use {
 		fill: currentColor;

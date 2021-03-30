@@ -1,18 +1,21 @@
+.container {
+	position: relative;
+}
 .filterBtn {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.75vmin;
+	font-size: clamp(1rem, 0.75vmax, 2rem);
 	color: var(--faded-text);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-radius: 50px;
-	width: 13.5vmax;
+	border-radius: 30px;
+	width: max(13.5vmax, 120px);
 	padding: 0.2em 1.2em;
 	border: 1px solid rgba(255, 255, 255, 0.253);
 	background: linear-gradient(
 		113.42deg,
-		rgba(255, 255, 255, 0.514) 0%,
-		rgba(255, 255, 255, 0.096) 100%
+		rgba(255, 255, 255, 0.651) 0%,
+		rgba(255, 255, 255, 0.438) 100%
 	);
 	backdrop-filter: blur(100px);
 	position: relative;
@@ -27,4 +30,10 @@
 
 .filterBtn path {
 	fill: var(--primary-text);
+}
+
+@media (max-width: 650px) {
+	.filterBtn {
+		border-radius: 3vmin;
+	}
 }

@@ -7,9 +7,10 @@
 	--switch-icon: linear-gradient(180deg, #ffcdb8 0%, #bfb3ff 100%);
 	--primary-text: rgba(42, 32, 75, 0.8);
 	--secondary-text: #00235e;
-	--faded-text: rgba(35, 67, 90, 0.7);
+	--faded-text: rgba(35, 67, 90, 0.829);
 	--skill-icons: #322462;
 	--btn-text: rgba(255, 255, 255, 0.95);
+	--header-text: #9c94b6;
 	--social-stop-1: rgba(67, 54, 112, 0.95);
 	--social-stop-2: rgba(41, 61, 94, 0.95);
 	--switch-stop-1: #ffcdb8;
@@ -36,7 +37,6 @@
 
 body {
 	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -44,6 +44,10 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: var(--primary-text);
+}
+
+* {
+	box-sizing: border-box;
 }
 
 button:focus {

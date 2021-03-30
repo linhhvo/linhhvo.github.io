@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Dashboard.module.css';
-import {Profile} from './ProfilePanel/Profile';
 import {Projects} from './Projects/Projects';
 import {HamburgerMenu} from './UI/HamburgerMenu/HamburgerMenu';
 
@@ -11,7 +10,6 @@ export const Dashboard = () => {
     return (
         <div className={classes.container}>
             {hamburger}
-
             <Projects />
         </div>
 

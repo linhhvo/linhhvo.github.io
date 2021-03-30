@@ -21,7 +21,7 @@
 .name {
 	margin: 1vmax 0;
 	font-weight: 700;
-	font-size: 2.25vmin;
+	font-size: clamp(1.25rem, 1.2vmax, 4rem);
 	text-align: center;
 }
 
@@ -37,7 +37,7 @@
 	align-items: center;
 	flex-direction: column;
 	justify-self: flex-end;
-	font-size: 1.45vmin;
+	font-size: clamp(0.75rem, 0.65vmax, 2rem);
 	margin-bottom: 2vmax;
 }
 
@@ -53,13 +53,13 @@
 @media (max-width: 650px) {
 	.container {
 		position: absolute;
-		height: 87vh;
+		height: 97vh;
 		width: 100vw;
 		border-radius: 0;
 		border: none;
 		z-index: 100;
 		background: var(--background);
-		padding-top: 13vh;
+		padding-top: 3vh;
 		color: var(--btn-text);
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in-out;
@@ -75,15 +75,7 @@
 		transition: opacity 0.7s ease-in;
 	}
 
-	.name {
-		font-size: 8vmin;
-	}
-
-	.themeSwitch {
-		font-size: 3.75vmin;
-	}
-
 	.themeSwitch svg {
-		width: 7vmin;
+		width: clamp(1.75rem, 3.25vmin, 4.25rem);
 	}
 }
