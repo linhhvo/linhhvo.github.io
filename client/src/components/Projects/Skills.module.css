@@ -5,8 +5,8 @@
 }
 
 .container svg {
-	width: clamp(1.25rem, 2.75vmin, 3rem);
-	height: clamp(1.25rem, 2.75vmin, 3rem);
+	width: clamp(1.25rem, 1.75vmax, 3rem);
+	height: clamp(1.25rem, 1.75vmax, 3rem);
 	padding-right: 0.4vmax;
 	fill: var(--skill-icons);
 }

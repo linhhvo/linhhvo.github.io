@@ -8,7 +8,8 @@ import {Social} from './Social';
 
 export const Profile = () => {
     return (
-        <div className={classes.container}>
+        <div className={classes.container + ' ' + classes.active}>
+            <div className={classes.burgerContainer} />
             <div className={classes.subContainer}>
                 <img className={classes.profilePic} src={profile_pic} alt="an illustration of myself" />
                 <p className={classes.name}>Linh Vo</p>

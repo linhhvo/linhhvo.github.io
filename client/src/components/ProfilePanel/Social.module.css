@@ -6,12 +6,14 @@
 .container p {
 	font-size: clamp(1.12rem, 1vmax, 4rem);
 	color: var(--faded-text);
+	margin: clamp(0.75rem, 2.5vmin, 3rem) 0;
+	/* margin-left: 0; */
 }
 
 .container svg {
-	width: clamp(2rem, 3.25vmin, 4.25rem);
-	height: clamp(2rem, 3.25vmin, 4.25rem);
-	margin-right: 2vmax;
+	width: clamp(1.75rem, 3.25vmin, 4.25rem);
+	height: clamp(1.75rem, 3.25vmin, 4.25rem);
+	margin-right: min(7vmax, 2rem);
 }
 
 .container use {
@@ -21,7 +23,6 @@
 @media (max-width: 650px) {
 	.container p {
 		color: var(--btn-text);
-		margin: 2.75vmax;
 	}
 
 	/* .container svg {

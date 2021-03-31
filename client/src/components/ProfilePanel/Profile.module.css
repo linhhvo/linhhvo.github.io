@@ -2,41 +2,57 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	width: 16vmax;
 	background: linear-gradient(110deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.1) 100%);
 	border-right: solid 1.5px rgba(255, 255, 255, 0);
 	z-index: 2;
 }
 
+.burgerContainer {
+	display: none;
+}
+
+.subContainer {
+	/* justify-self: center; */
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	/* align-content: space-between; */
+	/* align-self: center; */
+}
+
 .profilePic {
 	border-radius: 100%;
 	background-color: white;
 	display: flex;
-	margin: 13vmin auto 0;
-	width: 7vmax;
+	margin: 0 auto;
+	width: clamp(5rem, 6vmax, 15rem);
 	height: auto;
 }
 
 .name {
-	margin: 1vmax 0;
+	margin: 1vmax 0 5vh;
 	font-weight: 700;
 	font-size: clamp(1.25rem, 1.2vmax, 4rem);
 	text-align: center;
 }
 
 .iconContainer {
-	margin: 3vmax 0;
-	display: flex;
-	flex-direction: column;
+	/* margin: 3vmax 0; */
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* margin-top: 5vh; */
 }
 
 .themeSwitch {
 	display: flex;
-	justify-self: right;
+	/* justify-self: right; */
 	align-items: center;
 	flex-direction: column;
-	justify-self: flex-end;
+	/* justify-self: flex-end; */
 	font-size: clamp(0.75rem, 0.65vmax, 2rem);
 	margin-bottom: 2vmax;
 }
@@ -53,22 +69,42 @@
 @media (max-width: 650px) {
 	.container {
 		position: absolute;
-		height: 97vh;
+		height: 100vh;
 		width: 100vw;
 		border-radius: 0;
 		border: none;
 		z-index: 100;
 		background: var(--background);
-		padding-top: 3vh;
+		/* padding-top: min(10px); */
 		color: var(--btn-text);
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in-out;
+		/* overflow: hidden; */
+		justify-content: space-between;
+	}
+
+	.burgerContainer {
+		display: block;
+		height: 10vh;
+		width: 100vw;
+	}
+
+	.subContainer {
+		/* margin: auto; */
+		/* margin-bottom: 0; */
+		/* justify-content: space-between;
+		display: flex;
+		flex-direction: column; */
+	}
+
+	.active {
+		/* transform: translateY(0); */
 	}
 
 	.profilePic {
 		background-color: white;
 		display: flex;
-		width: 15vmax;
+		/* width: 15vmax; */
 	}
 
 	.subContainer {

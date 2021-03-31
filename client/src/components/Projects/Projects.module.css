@@ -12,10 +12,10 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, max(15vmax, 28ch));
 	grid-template-rows: 10vmin repeat(auto-fit, max(15vmax, 28ch));
-	grid-auto-rows: 30ch;
+	grid-auto-rows: 28ch;
 	/* grid-auto-flow: row; */
 	justify-content: center;
-	gap: max(3vmin, 30px);
+	gap: clamp(30px, 5vmin, 45px);
 	/* grid-template-areas: 'header header header'; */
 	/* padding-right: 2vmax; */
 	/* width: 100%; */
@@ -30,7 +30,9 @@
 
 @media (max-width: 650px) {
 	.projectsContainer {
-		/* grid-template-columns: repeat(auto-fit, 300px);
-		grid-template-rows: 100px repeat(auto-fit, 300px); */
+		/* grid-template-columns: repeat(auto-fit, 300px); */
+		grid-template-rows: 100px repeat(auto-fit, 28ch);
+		/* height:  */
+		/* overflow-x: hidden; */
 	}
 }

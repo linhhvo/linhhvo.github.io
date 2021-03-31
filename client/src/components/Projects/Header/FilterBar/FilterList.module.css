@@ -2,7 +2,7 @@
 	background: var(--dropdown);
 	border-radius: 1.9vmin 1.9vmin 1.75vmin 1.75vmin;
 	position: absolute;
-	width: max(13.5vmax, 120px);
+	width: clamp(200px, 15vmax, 400px);
 	margin: min(-32px, -1.25vmax) 0;
 	color: var(--secondary-text);
 	/* z-index: 10; */
