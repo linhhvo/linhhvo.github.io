@@ -14,14 +14,11 @@
 }
 
 .subContainer {
-	/* justify-self: center; */
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
-	/* align-content: space-between; */
-	/* align-self: center; */
 }
 
 .profilePic {
@@ -30,7 +27,6 @@
 	display: flex;
 	margin: 0 auto;
 	width: clamp(5rem, 6vmax, 15rem);
-	height: auto;
 }
 
 .name {
@@ -40,26 +36,16 @@
 	text-align: center;
 }
 
-.iconContainer {
-	/* margin: 3vmax 0; */
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* margin-top: 5vh; */
-}
-
 .themeSwitch {
 	display: flex;
-	/* justify-self: right; */
 	align-items: center;
 	flex-direction: column;
-	/* justify-self: flex-end; */
 	font-size: clamp(0.75rem, 0.65vmax, 2rem);
 	margin-bottom: 2vmax;
 }
 
 .themeSwitch svg {
 	width: 3vmin;
-	height: auto;
 }
 
 .themeSwitch p {
@@ -75,11 +61,9 @@
 		border: none;
 		z-index: 100;
 		background: var(--background);
-		/* padding-top: min(10px); */
 		color: var(--btn-text);
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in-out;
-		/* overflow: hidden; */
 		justify-content: space-between;
 		display: none;
 	}
@@ -90,22 +74,9 @@
 		width: 100vw;
 	}
 
-	.subContainer {
-		/* margin: auto; */
-		/* margin-bottom: 0; */
-		/* justify-content: space-between;
-		display: flex;
-		flex-direction: column; */
-	}
-
-	.active {
-		/* transform: translateY(0); */
-	}
-
 	.profilePic {
 		background-color: white;
 		display: flex;
-		/* width: 15vmax; */
 	}
 
 	.subContainer {

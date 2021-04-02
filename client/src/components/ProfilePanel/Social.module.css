@@ -7,7 +7,6 @@
 	font-size: clamp(1.12rem, 1vmax, 4rem);
 	color: var(--faded-text);
 	margin: clamp(0.75rem, 2.5vmin, 3rem) 0;
-	/* margin-left: 0; */
 }
 
 .container svg {
@@ -24,11 +23,6 @@
 	.container p {
 		color: var(--btn-text);
 	}
-
-	/* .container svg {
-		width: 7vmax;
-		height: 7vmax;
-	} */
 
 	.container use {
 		fill: currentColor;
