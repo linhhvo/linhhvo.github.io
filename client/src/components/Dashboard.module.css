@@ -5,6 +5,10 @@
 	z-index: 10;
 }
 
+.arrow {
+	height: 4vmin;
+}
+
 .arrow svg {
 	width: 3vmin;
 	display: flex;

@@ -7,9 +7,12 @@ import {SocialIcons} from './components/Icons/SocialIcons';
 import {SkillIcons} from './components/Icons/SkillIcons';
 import {Profile} from './components/ProfilePanel/Profile';
 import {HamburgerMenu} from './components/UI/HamburgerMenu/HamburgerMenu';
+import {GlobalProvider} from './context/GlobalState';
+
 
 function App () {
     return (
+        // <GlobalProvider>
         <div className='container'>
             <SocialIcons />
             <SkillIcons />
@@ -18,6 +21,7 @@ function App () {
             <Profile />
             <Dashboard />
         </div>
+        // </GlobalProvider>
 
     );
 }
