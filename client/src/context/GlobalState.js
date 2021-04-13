@@ -7,7 +7,8 @@ const initialState = {
     projectScroll: false,
     profileSlide: false,
 
-    switchTheme: () => { }
+    switchTheme: () => { },
+    toggleProfilePanel: () => { }
 };
 
 // Create context
@@ -54,6 +55,14 @@ export const GlobalProvider = ({children}) => {
             localStorage.setItem('theme', 'dark');
         }
     };
+
+    // Show/hide profile panel on mobile view
+    const toggleProfilePanel = () => {
+        dispatch({
+            type: 'SLIDE_PROFILE'
+        });
+    };
+
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     return (
@@ -62,7 +71,8 @@ export const GlobalProvider = ({children}) => {
                 theme: state.theme,
                 projectScroll: state.projectScroll,
                 profileSlide: state.profileSlide,
-                switchTheme
+                switchTheme,
+                toggleProfilePanel
             }}>
             {children}
         </GlobalContext.Provider>);

@@ -9,10 +9,10 @@ import {Social} from './Social';
 import {GlobalContext} from '../../context/GlobalState';
 
 export const Profile = () => {
-    const {switchTheme} = useContext(GlobalContext);
+    const {switchTheme, profileSlide} = useContext(GlobalContext);
 
     return (
-        <div className={classes.container + ' ' + classes.active}>
+        <div className={profileSlide ? classes.container + ' ' + classes.active : classes.container}>
             <div className={classes.burgerContainer} />
             <div className={classes.subContainer}>
                 <img className={classes.profilePic} src={profile_pic} alt="an illustration of myself" />

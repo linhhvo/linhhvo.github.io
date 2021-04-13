@@ -28,4 +28,9 @@
 	.container use {
 		fill: currentColor;
 	}
+
+	.container:hover p,
+	.container:hover use {
+		opacity: 0.6;
+	}
 }
