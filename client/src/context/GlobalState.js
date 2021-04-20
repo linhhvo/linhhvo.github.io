@@ -1,11 +1,15 @@
 import React, {createContext, useReducer, useState, useLayoutEffect} from 'react';
 import AppReducer from './AppReducer';
+import axios from 'axios';
 
 // Initial state
 const initialState = {
     theme: 'dark',
     projectScroll: false,
     profileSlide: false,
+    projects: [],
+    loading: true,
+    error: null,
 
     switchTheme: () => { },
     toggleProfilePanel: () => { }
@@ -16,6 +20,8 @@ export const GlobalContext = createContext(initialState);
 
 // Provider component
 export const GlobalProvider = ({children}) => {
+    const [state, dispatch] = useReducer(AppReducer, initialState);
+
     // Set up switch theme functionality
     const [theme, setTheme] = useState('dark');
 
@@ -63,7 +69,22 @@ export const GlobalProvider = ({children}) => {
         });
     };
 
-    const [state, dispatch] = useReducer(AppReducer, initialState);
+    // Actions
+    async function getProjects () {
+        try {
+            const response = await axios.get('/api/projects');
+
+            dispatch({
+                type: 'GET_PROJECTS',
+                payload: response.data
+            });
+        } catch (err) {
+            dispatch({
+                type: 'PROJECT_ERROR',
+                payload: error.response.data.error
+            });
+        }
+    }
 
     return (
         <GlobalContext.Provider
@@ -71,6 +92,10 @@ export const GlobalProvider = ({children}) => {
                 theme: state.theme,
                 projectScroll: state.projectScroll,
                 profileSlide: state.profileSlide,
+                projects: state.projects,
+                error: state.error,
+                loading: state.loading,
+                getProjects,
                 switchTheme,
                 toggleProfilePanel
             }}>

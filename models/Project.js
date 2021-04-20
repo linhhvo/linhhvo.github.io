@@ -16,5 +16,11 @@ const ProjectSchema = new mongoose.Schema({
     demo: String,
     report: String,
     category: String,
-    priority: Number
+    priority: {
+        type: Number,
+        required: [true, 'Please enter priority level.']
+    }
 });
+
+const ProjectModel = mongoose.model('Project', ProjectSchema);
+module.exports = ProjectModel;
