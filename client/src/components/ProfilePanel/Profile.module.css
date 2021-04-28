@@ -64,13 +64,14 @@
 		background: var(--background);
 		color: var(--btn-text);
 		transform: translateX(100%);
-		transition: transform 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
 		justify-content: space-between;
-		/* display: none; */
+		opacity: 0.5;
 	}
 
 	.active {
 		transform: translateY(0%);
+		opacity: 1;
 	}
 
 	.burgerContainer {
