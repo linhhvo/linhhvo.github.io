@@ -1,37 +1,53 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useLayoutEffect, useRef} from 'react';
 import classes from './Projects.module.css';
 import {ScrollBar} from '../UI/ScrollBar/ScrollBar';
+import {ShowMore} from '../Icons/ShowMore';
 import {Header} from './Header/Header';
 import {Project} from './Project';
 
 export const Projects = () => {
-    const [clientHeight, setclientHeight] = useState(0);
-    const [scrollHeight, setscrollHeight] = useState(0);
+    // Set up reference for projects container
     const ref = useRef(null);
 
-    useEffect(() => {
-        setclientHeight(ref.current.clientHeight);
-        setscrollHeight(ref.current.scrollHeight);
-    });
+    // Set up state to update container height if resize
+    const [clientHeight, setClientHeight] = useState(0);
+    const [scrollHeight, setScrollHeight] = useState(0);
 
-    // console.log(clientHeight);
-    // console.log(scrollHeight);
+    useLayoutEffect(() => {
+        const updateHeight = () => {
+            setClientHeight(ref.current.clientHeight);
+            setScrollHeight(ref.current.scrollHeight);
+        };
+        window.addEventListener('resize', updateHeight);
+
+        updateHeight();
+
+        return () => window.removeEventListener('resize', updateHeight);
+    }, []);
+
+    // Show/hide arrow based on projects container height
+    let showArrow = scrollHeight > clientHeight ? <ShowMore /> : null;
 
     return (
-        <ScrollBar>
-            <div className={classes.projectsContainer} ref={ref}>
-                <Header />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <Project />
-                <div className={classes.lastRow}></div>
+        <React.Fragment>
+            <ScrollBar>
+                <div className={classes.projectsContainer} ref={ref} id='projects'>
+                    <Header />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <Project />
+                    <div className={classes.lastRow}></div>
+                </div>
+            </ScrollBar>
+            <div className={classes.arrow}>
+                {showArrow}
             </div>
-        </ScrollBar>
 
+        </React.Fragment>
     );
 };

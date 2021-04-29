@@ -5,7 +5,6 @@ import axios from 'axios';
 // Initial state
 const initialState = {
     theme: 'dark',
-    projectScroll: false,
     profileSlide: false,
     projects: [],
     loading: true,
@@ -49,7 +48,7 @@ export const GlobalProvider = ({children}) => {
                 document.getElementById('main').classList.replace('dark', 'light');
             }
         }
-    });
+    }, []);
 
     // Switch theme function to allow toggle theme with light bulb icon
     const switchTheme = () => {
@@ -62,6 +61,8 @@ export const GlobalProvider = ({children}) => {
         }
     };
 
+
+    // Actions
     // Show/hide profile panel on mobile view
     const toggleProfilePanel = () => {
         dispatch({
@@ -69,7 +70,7 @@ export const GlobalProvider = ({children}) => {
         });
     };
 
-    // Actions
+    // Retrieve projects from database
     async function getProjects () {
         try {
             const response = await axios.get('/api/projects');
@@ -90,14 +91,13 @@ export const GlobalProvider = ({children}) => {
         <GlobalContext.Provider
             value={{
                 theme: state.theme,
-                projectScroll: state.projectScroll,
                 profileSlide: state.profileSlide,
                 projects: state.projects,
                 error: state.error,
                 loading: state.loading,
                 getProjects,
                 switchTheme,
-                toggleProfilePanel
+                toggleProfilePanel,
             }}>
             {children}
         </GlobalContext.Provider>);

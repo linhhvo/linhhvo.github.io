@@ -5,11 +5,9 @@ import {DropDown} from '../../../Icons/DropDown';
 import {FilterList} from './FilterList';
 
 export const FilterBar = () => {
-    // const ref = React.useRef();
     const [expandList, setexpandList] = React.useState(false);
 
     const onClick = () => {
-        // ref.current.classList.toggle(`${classes.collapsed}`);
         setexpandList(!expandList);
     };
 

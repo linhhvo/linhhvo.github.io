@@ -7,8 +7,6 @@ import {SocialIcons} from './components/Icons/SocialIcons';
 import {SkillIcons} from './components/Icons/SkillIcons';
 import {Profile} from './components/ProfilePanel/Profile';
 import {HamburgerMenu} from './components/UI/HamburgerMenu/HamburgerMenu';
-import {GlobalContext} from './context/GlobalState';
-
 
 function App () {
     return (

@@ -9,6 +9,17 @@
 	height: 90vh;
 }
 
+.arrow {
+	height: 5vmin;
+}
+
+.arrow svg {
+	width: 3vmin;
+	display: flex;
+	margin: 15px auto 0px;
+	fill: var(--header-text);
+}
+
 .lastRow {
 	height: 0.1px;
 	grid-column: 1 / -1;
@@ -16,5 +27,9 @@
 @media (max-width: 650px) {
 	.projectsContainer {
 		grid-template-rows: 100px repeat(auto-fit, 28ch);
+	}
+
+	.arrow {
+		display: none;
 	}
 }
