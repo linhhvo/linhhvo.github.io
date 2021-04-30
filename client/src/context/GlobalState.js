@@ -48,7 +48,7 @@ export const GlobalProvider = ({children}) => {
                 document.getElementById('main').classList.replace('dark', 'light');
             }
         }
-    }, []);
+    });
 
     // Switch theme function to allow toggle theme with light bulb icon
     const switchTheme = () => {
