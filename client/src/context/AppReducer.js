@@ -10,13 +10,13 @@ export default (state, action) => {
             return {
                 ...state,
                 loading: false,
-                projects: action.payload
+                projects: action.payload.data
             };
 
         case 'PROJECT_ERROR':
             return {
                 ...state,
-                error: action.payload
+                error: action.payload.error
             };
 
         default:

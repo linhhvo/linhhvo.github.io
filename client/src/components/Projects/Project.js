@@ -4,22 +4,22 @@ import thumbnail from '../../assets/thumbnail.png';
 import {Skills} from './Skills';
 import {Button} from '../UI/Button/Button';
 
-export const Project = () => {
-  return (
-    <div className={classes.container}>
-      <img src={thumbnail} alt='thumbnail for project name' />
+export const Project = ({project}) => {
+    return (
+        <div className={classes.container}>
+            <img src={thumbnail} alt='thumbnail for project name' />
 
-      <div className={classes.detailsContainer}>
-        <h2>Project name</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-        <Skills />
-      </div>
+            <div className={classes.detailsContainer}>
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <Skills skillList={project.skill} />
+            </div>
 
-      <div className={classes.btnContainer}>
-        <Button text='view demo' />
-        <Button text='source code' />
-      </div>
+            <div className={classes.btnContainer}>
+                <Button text='view demo' onClick={() => window.open(project.demo)} />
+                <Button text='source code' onClick={() => window.open(project.sourceCode)} />
+            </div>
 
-    </div>
-  );
+        </div>
+    );
 };

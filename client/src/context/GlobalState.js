@@ -74,7 +74,6 @@ export const GlobalProvider = ({children}) => {
     async function getProjects () {
         try {
             const response = await axios.get('/api/projects');
-
             dispatch({
                 type: 'GET_PROJECTS',
                 payload: response.data

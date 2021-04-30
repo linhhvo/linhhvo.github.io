@@ -1,8 +1,7 @@
 .projectsContainer {
-	/* overflow-y: scroll; */
 	display: grid;
-	grid-template-columns: repeat(auto-fit, max(15vmax, 28ch));
-	grid-template-rows: 10vmin repeat(auto-fit, max(15vmax, 28ch));
+	grid-template-columns: repeat(auto-fit, max(18vmax, 28ch));
+	grid-template-rows: 10vmin repeat(auto-fit, max(18vmax, 28ch));
 	grid-auto-rows: 28ch;
 	justify-content: center;
 	gap: clamp(30px, 5vmin, 45px);
@@ -26,7 +25,9 @@
 }
 @media (max-width: 650px) {
 	.projectsContainer {
-		grid-template-rows: 100px repeat(auto-fit, 28ch);
+		grid-template-columns: repeat(auto-fit, 30ch);
+		grid-template-rows: 100px repeat(auto-fit, 30ch);
+		grid-auto-rows: 30ch;
 	}
 
 	.arrow {
