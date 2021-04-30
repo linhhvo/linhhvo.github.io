@@ -1,21 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import classes from './FilterBar.module.css';
-
+import {GlobalContext} from '../../../../context/GlobalState';
 import {DropDown} from '../../../Icons/DropDown';
 import {FilterList} from './FilterList';
 
 export const FilterBar = () => {
-    const [expandList, setexpandList] = React.useState(false);
-
-    const onClick = () => {
-        setexpandList(!expandList);
-    };
+    const {toggleFilterList} = useContext(GlobalContext);
 
     return (
         <div className={classes.container}>
-            <button className={classes.filterBtn} onClick={onClick} aria-label="dropdown-filter">Filter by <DropDown expandList={expandList} /></button>
+            <button className={classes.filterBtn} onClick={() => toggleFilterList()} aria-label="dropdown-filter">Filter by <DropDown /></button>
 
-            <FilterList expandList={expandList} />
+            <FilterList />
         </div>
     );
 };

@@ -6,11 +6,23 @@ export default (state, action) => {
                 profileSlide: !state.profileSlide
             };
 
+        case 'FILTER_DROPDOWN':
+            return {
+                ...state,
+                filterDropDown: !state.filterDropDown
+            };
         case 'GET_PROJECTS':
             return {
                 ...state,
                 loading: false,
-                projects: action.payload.data
+                displayedProjects: action.payload.data,
+                allProjects: action.payload.data
+            };
+
+        case 'FILTER_PROJECTS':
+            return {
+                ...state,
+                displayedProjects: action.payload.data
             };
 
         case 'PROJECT_ERROR':

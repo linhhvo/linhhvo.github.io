@@ -6,12 +6,15 @@ import axios from 'axios';
 const initialState = {
     theme: 'dark',
     profileSlide: false,
-    projects: [],
+    filterDropDown: false,
+    displayedProjects: [],
+    allProjects: [],
     loading: true,
     error: null,
 
     switchTheme: () => { },
-    toggleProfilePanel: () => { }
+    toggleProfilePanel: () => { },
+    toggleFilterList: () => { }
 };
 
 // Create context
@@ -70,6 +73,13 @@ export const GlobalProvider = ({children}) => {
         });
     };
 
+    // Show/hide filter list
+    const toggleFilterList = () => {
+        dispatch({
+            type: 'FILTER_DROPDOWN'
+        });
+    };
+
     // Retrieve projects from database
     async function getProjects () {
         try {
@@ -86,17 +96,37 @@ export const GlobalProvider = ({children}) => {
         }
     }
 
+    // Filter projects based on query
+    async function filterProjects (query) {
+        try {
+            const response = await axios.get(`/api/projects?${query}`);
+            dispatch({
+                type: 'FILTER_PROJECTS',
+                payload: response.data
+            });
+        } catch (err) {
+            dispatch({
+                type: 'PROJECT_ERROR',
+                payload: err.response.data.error
+            });
+        }
+    }
+
     return (
         <GlobalContext.Provider
             value={{
                 theme: state.theme,
                 profileSlide: state.profileSlide,
-                projects: state.projects,
+                filterDropDown: state.filterDropDown,
+                displayedProjects: state.displayedProjects,
+                allProjects: state.allProjects,
                 error: state.error,
                 loading: state.loading,
                 getProjects,
+                filterProjects,
                 switchTheme,
                 toggleProfilePanel,
+                toggleFilterList
             }}>
             {children}
         </GlobalContext.Provider>);

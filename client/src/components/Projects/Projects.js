@@ -8,7 +8,7 @@ import {GlobalContext} from '../../context/GlobalState';
 
 export const Projects = () => {
     // Retrieve list of projects
-    const {projects, getProjects} = useContext(GlobalContext);
+    const {displayedProjects, getProjects} = useContext(GlobalContext);
 
     useEffect(() => {
         getProjects();
@@ -43,7 +43,7 @@ export const Projects = () => {
                 <div className={classes.projectsContainer} ref={ref} id='projects'>
                     <Header />
 
-                    {projects.map(project => <Project key={project._id} project={project} />)}
+                    {displayedProjects.map(project => <Project key={project._id} project={project} />)}
 
                     <div className={classes.lastRow}></div>
                 </div>
