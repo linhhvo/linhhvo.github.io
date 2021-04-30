@@ -41,7 +41,7 @@
 	width: 100%;
 	display: flex;
 	padding: 0 max(1vmax, 15px) max(1.25vmin, 10px);
-	justify-content: space-between;
+	justify-content: center;
 }
 
 @media (max-width: 650px) {

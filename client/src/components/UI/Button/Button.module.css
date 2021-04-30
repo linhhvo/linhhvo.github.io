@@ -9,3 +9,7 @@
 	font-family: 'Poppins', sans-serif;
 	padding: max(0.75vmin, 4px) max(0.75vmin, 10px);
 }
+
+.button + .button {
+	margin-left: 10px;
+}

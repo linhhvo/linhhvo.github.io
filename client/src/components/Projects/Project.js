@@ -16,8 +16,9 @@ export const Project = ({project}) => {
             </div>
 
             <div className={classes.btnContainer}>
-                <Button text='view demo' onClick={() => window.open(project.demo)} />
-                <Button text='source code' onClick={() => window.open(project.sourceCode)} />
+                {project.demo ? <Button text='view demo' link={project.demo} /> : null}
+                {project.sourceCode ? <Button text='source code' link={project.sourceCode} /> : null}
+                {project.report ? <Button text='view report' link={project.report} /> : null}
             </div>
 
         </div>
