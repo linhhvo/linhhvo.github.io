@@ -26,17 +26,11 @@
 .filterBtn svg {
 	width: 1em;
 	height: 0.6em;
+	transition: transform 0.2s;
 }
 
 .filterBtn path {
 	fill: var(--primary-text);
-}
-
-.collapsed {
-	opacity: 0;
-	overflow: hidden;
-	padding: 0;
-	pointer-events: none;
 }
 
 @media (max-width: 650px) {
