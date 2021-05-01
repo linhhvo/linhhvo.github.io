@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const connectDB = require('./config/database');
+const path = require('path');
 
 // Get global env variable
 dotenv.config({path: './config/config.env'});
