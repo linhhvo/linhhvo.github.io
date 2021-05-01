@@ -1,7 +1,7 @@
 import React, {useState, useLayoutEffect, useEffect, useRef, useContext} from 'react';
 import classes from './Projects.module.css';
 import {ScrollBar} from '../UI/ScrollBar/ScrollBar';
-import {ShowMore} from '../Icons/ShowMore';
+import {ShowMore} from '../icons/ShowMore';
 import {Header} from './Header/Header';
 import {Project} from './Project';
 import {GlobalContext} from '../../context/GlobalState';

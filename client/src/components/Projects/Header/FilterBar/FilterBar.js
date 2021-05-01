@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import classes from './FilterBar.module.css';
 import {GlobalContext} from '../../../../context/GlobalState';
-import {DropDown} from '../../../Icons/DropDown';
+import {DropDown} from '../../../icons/DropDown';
 import {FilterList} from './FilterList';
 
 export const FilterBar = () => {

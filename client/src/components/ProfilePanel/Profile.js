@@ -3,7 +3,7 @@ import React, {useContext} from 'react';
 import classes from './Profile.module.css';
 import profile_pic from '../../assets/profile.png';
 
-import {ThemeSwitch} from '../Icons/ThemeSwitch';
+import {ThemeSwitch} from '../icons/ThemeSwitch';
 import {Social} from './Social';
 
 import {GlobalContext} from '../../context/GlobalState';
