@@ -3,7 +3,7 @@ import classes from './FilterList.module.css';
 import {GlobalContext} from '../../../../context/GlobalState';
 
 export const FilterList = () => {
-    const {allProjects, filterProjects, filterDropDown, toggleFilterList} = useContext(GlobalContext);
+    const {allProjects, filterProjects, filterDropDown, toggleFilterList, getProjects} = useContext(GlobalContext);
 
     let skills = new Set();
 
@@ -11,20 +11,24 @@ export const FilterList = () => {
         project.skill.forEach(skill => skills.add(skill));
     });
 
+    let categories = new Set();
+
+    allProjects.forEach(project => categories.add(project.category));
+
     let styleClass = filterDropDown ? `${classes.container}` : `${classes.container} ${classes.collapsed}`;
 
-    const skillClickHandler = (e) => {
-        toggleFilterList();
-
-        console.log(e.target.innerText);
-        filterProjects(`skill=${e.target.innerText}`);
-    };
-
     return (
-        <div className={styleClass}>
+        <div className={styleClass} onClick={toggleFilterList}>
             <ul>
+                <li onClick={() => getProjects()}>Show All</li>
+                <li className={classes.disabled}>By Category</li>
+                {[...categories].map(category =>
+                    <li onClick={(e) => filterProjects(`category=${e.target.innerText}`)} key={category}>{category}</li>
+                )}
+
+                <li className={classes.disabled}>By Skill</li>
                 {[...skills].sort().map(skill =>
-                    <li onClick={skillClickHandler} key={skill}>{skill}</li>
+                    <li onClick={(e) => filterProjects(`skill=${e.target.innerText}`)} key={skill}>{skill}</li>
                 )}
             </ul>
         </div>
