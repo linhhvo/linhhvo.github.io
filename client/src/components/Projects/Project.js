@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Project.module.css';
-import thumbnail from '../../assets/thumbnail.png';
+import thumbnail from '../../assets/Thumbnails/thumbnail.png';
 import {Skills} from './Skills';
 import {Button} from '../UI/Button/Button';
 
