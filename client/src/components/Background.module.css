@@ -27,3 +27,9 @@
 	filter: blur(250px);
 	z-index: 1;
 }
+
+@media (max-width: 650px) {
+	.ellipse1 {
+		display: none;
+	}
+}

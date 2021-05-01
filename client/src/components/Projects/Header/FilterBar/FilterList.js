@@ -22,7 +22,7 @@ export const FilterList = () => {
             <ul>
                 <li onClick={() => getProjects()}>Show All</li>
                 <li className={classes.disabled}>By Category</li>
-                {[...categories].map(category =>
+                {[...categories].sort().map(category =>
                     <li onClick={(e) => filterProjects(`category=${e.target.innerText}`)} key={category}>{category}</li>
                 )}
 
