@@ -21,7 +21,6 @@ export const Profile = () => {
                     <Social name='Github' href='https://www.github.com/linhhvo' />
                     <Social name='Linkedin' href='https://www.linkedin.com/in/linhhvo' />
                     <Social name='Email' href='mailto: lhvo2112@gmail.com' />
-                    <Social name='Resume' href='https://drive.google.com/file/d/1QQF0A6JmqEmBn-WC_Z4gAGgBQRfM2Tv2/view?usp=sharing' />
                 </div>
             </div>
 

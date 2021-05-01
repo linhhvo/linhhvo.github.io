@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, max(18vmax, 28ch));
 	grid-template-rows: 10vmin repeat(auto-fit, max(18vmax, 28ch));
-	grid-auto-rows: 28ch;
+	grid-auto-rows: max(18vmax, 28ch);
 	justify-content: center;
 	gap: clamp(30px, 5vmin, 45px);
 	height: 90vh;
