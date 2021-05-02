@@ -26,7 +26,7 @@ export const Profile = () => {
 
             <div className={classes.themeSwitch}>
                 <ThemeSwitch toggle={() => switchTheme()} />
-                <p>Enable light mode </p>
+                <p>Switch mode </p>
             </div>
 
         </div>

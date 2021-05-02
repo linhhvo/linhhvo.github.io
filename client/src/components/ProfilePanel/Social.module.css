@@ -5,14 +5,14 @@
 }
 
 .container p {
-	font-size: clamp(1.12rem, 1vmax, 4rem);
+	font-size: clamp(1.12rem, 1vmax, 1.75rem);
 	color: var(--faded-text);
 	margin: clamp(0.75rem, 2.5vmin, 3rem) 0;
 }
 
 .container svg {
-	width: clamp(1.75rem, 3.25vmin, 4.25rem);
-	height: clamp(1.75rem, 3.25vmin, 4.25rem);
+	width: clamp(1.75rem, 3.25vmin, 3.25rem);
+	height: clamp(1.75rem, 3.25vmin, 3.25rem);
 	margin-right: min(7vmax, 2rem);
 }
 

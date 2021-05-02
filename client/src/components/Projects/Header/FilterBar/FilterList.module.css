@@ -1,9 +1,9 @@
 .container {
 	background: var(--dropdown);
-	border-radius: 1.75vmin;
+	border-radius: 16px;
 	position: absolute;
-	top: 260%;
-	width: clamp(200px, 15vmax, 400px);
+	top: clamp(80px, 9vmin, 100px);
+	width: clamp(200px, 15vmax, 300px);
 	margin: min(-33px, -1.25vmax) 0;
 	color: var(--secondary-text);
 	transition: all 0.4s ease-in;
@@ -11,7 +11,7 @@
 
 .container ul {
 	/* padding-top: 0.5em; */
-	font-size: clamp(1rem, 0.75vmax, 2rem);
+	/* font-size: clamp(1rem, 0.75vmax, 2rem); */
 }
 
 .container ul:before {
@@ -42,8 +42,8 @@
 }
 
 .container li:first-child:hover {
-	border-top-left-radius: 1.75vmin;
-	border-top-right-radius: 1.75vmin;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
 }
 
 .container li:last-child {
@@ -56,8 +56,8 @@
 }
 
 .container li:last-child:hover {
-	border-bottom-left-radius: 1.75vmin;
-	border-bottom-right-radius: 1.75vmin;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
 }
 
 .disabled {
@@ -74,6 +74,6 @@
 
 @media (max-width: 650px) {
 	.container {
-		border-radius: 3vmin;
+		/* border-radius: 3vmin; */
 	}
 }

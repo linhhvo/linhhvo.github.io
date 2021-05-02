@@ -1,16 +1,21 @@
 .button {
 	width: 48%;
 	background: var(--btn);
-	border-radius: 0.75vmin;
+	border-radius: 10px;
 	border: none;
 	color: var(--btn-text);
 	font-weight: 300;
-	font-size: clamp(0.75rem, 0.75vmax, 2rem);
+	/* font-size: clamp(0.75rem, 0.75vmax, 1rem); */
 	font-family: 'Poppins', sans-serif;
-	padding: max(0.75vmin, 4px) max(0.75vmin, 10px);
+	padding: 4px 10px;
 	cursor: pointer;
 }
 
 .button + .button {
 	margin-left: 10px;
+}
+
+.button:hover {
+	background: var(--dropdown);
+	color: var(--secondary-text);
 }
