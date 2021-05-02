@@ -1,0 +1,9 @@
+.root {
+	height: 90vh !important;
+}
+
+@media (max-width: 650px) {
+	.root {
+		height: -webkit-fill-available !important;
+	}
+}

@@ -5,7 +5,7 @@
 	grid-auto-rows: max(18vmax, 28ch);
 	justify-content: center;
 	gap: clamp(30px, 5vmin, 45px);
-	height: 90vh;
+	height: 92vh;
 }
 
 .arrow {
@@ -28,6 +28,10 @@
 		grid-template-columns: repeat(auto-fit, 30ch);
 		grid-template-rows: 100px repeat(auto-fit, 30ch);
 		grid-auto-rows: 30ch;
+	}
+
+	.lastRow {
+		height: 50px;
 	}
 
 	.arrow {
