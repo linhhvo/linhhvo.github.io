@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './Project.module.css';
 import thumbnail from '../../assets/Thumbnails/thumbnail.png';
 import {Skills} from './Skills';
 import {Button} from '../UI/Button/Button';
 
-export const Project = ({project}) => {
+export const Project = ({project, reloadParent}) => {
+    console.log('ind project render');
+    useEffect(() => {reloadParent();}, []);
+    // reloadParent();
     return (
         <div className={classes.container}>
             <img src={thumbnail} alt='thumbnail for project name' />

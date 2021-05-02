@@ -1,4 +1,4 @@
-import React, {useState, useLayoutEffect, useEffect, useRef, useContext} from 'react';
+import React, {useState, useEffect, useRef, useContext} from 'react';
 import classes from './Projects.module.css';
 import {ScrollBar} from '../UI/ScrollBar/ScrollBar';
 import {ShowMore} from '../icons/ShowMore';
@@ -10,32 +10,30 @@ export const Projects = () => {
     // Retrieve list of projects
     const {displayedProjects, getProjects} = useContext(GlobalContext);
 
-    useEffect(() => {
-        getProjects();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    // Set up reference for projects container
-    const ref = useRef(null);
-
     // Set up state to update container height if resize
     const [clientHeight, setClientHeight] = useState(0);
     const [scrollHeight, setScrollHeight] = useState(0);
 
-    useLayoutEffect(() => {
-        const updateHeight = () => {
-            setClientHeight(ref.current.clientHeight);
-            setScrollHeight(ref.current.scrollHeight);
-        };
+    // Set up reference for projects container
+    const ref = useRef(null);
+
+    const updateHeight = () => {
+        setClientHeight(ref.current.clientHeight);
+        setScrollHeight(ref.current.scrollHeight);
+    };
+
+    useEffect(() => {
+        getProjects();
+
         window.addEventListener('resize', updateHeight);
 
-        updateHeight();
+        console.log('projects render in useEffect');
 
         return () => window.removeEventListener('resize', updateHeight);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    // Show/hide arrow based on projects container height
-    let showArrow = scrollHeight > clientHeight ? <ShowMore /> : null;
+    console.log('projects render');
 
     return (
         <React.Fragment>
@@ -43,13 +41,13 @@ export const Projects = () => {
                 <div className={classes.projectsContainer} ref={ref} id='projects'>
                     <Header />
 
-                    {displayedProjects.map(project => <Project key={project._id} project={project} />)}
+                    {displayedProjects.map(project => <Project key={project._id} project={project} reloadParent={updateHeight} />)}
 
                     <div className={classes.lastRow}></div>
                 </div>
             </ScrollBar>
             <div className={classes.arrow}>
-                {showArrow}
+                {scrollHeight > clientHeight ? <ShowMore /> : null}
             </div>
 
         </React.Fragment>
