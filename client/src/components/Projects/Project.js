@@ -1,16 +1,17 @@
 import React, {useEffect} from 'react';
 import classes from './Project.module.css';
-import thumbnail from '../../assets/Thumbnails/thumbnail.png';
+// import thumbnail from '../../assets/Thumbnails';
 import {Skills} from './Skills';
 import {Button} from '../UI/Button/Button';
 
 export const Project = ({project, reloadParent}) => {
-    console.log('ind project render');
     useEffect(() => {reloadParent();}, []);
-    // reloadParent();
+
+    const imagePath = process.env.PUBLIC_URL + '/assets/Thumbnails/';
+
     return (
         <div className={classes.container}>
-            <img src={thumbnail} alt='thumbnail for project name' />
+            <img src={imagePath + project.thumbnail + '.png'} alt={`thumbnail for ${project.name}`} />
 
             <div className={classes.detailsContainer}>
                 <h2>{project.name}</h2>

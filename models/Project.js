@@ -11,6 +11,7 @@ const ProjectSchema = new mongoose.Schema({
         trim: true,
         required: [true, 'Please enter description.']
     },
+    thumbnail: String,
     skill: Array,
     sourceCode: String,
     demo: String,

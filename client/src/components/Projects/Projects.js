@@ -27,13 +27,9 @@ export const Projects = () => {
 
         window.addEventListener('resize', updateHeight);
 
-        console.log('projects render in useEffect');
-
         return () => window.removeEventListener('resize', updateHeight);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    console.log('projects render');
 
     return (
         <React.Fragment>
