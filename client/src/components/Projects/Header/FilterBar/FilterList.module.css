@@ -18,7 +18,7 @@
 	right: 1.2em;
 	border-width: 0 0.5em 0.5em;
 	border-style: solid;
-	border-color: #958cb4 transparent;
+	border-color: var(--pointer) transparent;
 }
 
 .container li {
@@ -47,7 +47,6 @@
 
 .container li:not(.disabled):hover {
 	background: var(--dropdown-hover);
-	color: var(--btn-text);
 }
 
 .container li:last-child:hover {

@@ -13,38 +13,65 @@
 
 .dark {
 	--background: linear-gradient(252.44deg, #1a5780 0.01%, #433670 100%);
+
 	--ellipse: linear-gradient(180deg, #082c46 0%, #382b67 94.71%);
-	--btn: linear-gradient(95deg, #433670 0%, #2c4a79 100%);
+
+	--profile: linear-gradient(110deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.1) 100%);
+	--profile-border: rgba(255, 255, 255, 0);
+
+	--filterBar: linear-gradient(
+		113.42deg,
+		rgba(255, 255, 255, 0.651) 0%,
+		rgba(255, 255, 255, 0.438) 100%
+	);
+
 	--dropdown: linear-gradient(134deg, #958cb4 0%, #768fb9 100%);
+	--pointer: #898db6;
 	--dropdown-hover: linear-gradient(134deg, #8d7fb6 0%, #5b7aaa 100%);
-	--switch-icon: linear-gradient(180deg, #ffcdb8 0%, #bfb3ff 100%);
+
+	--btn: #3a2b70;
+
 	--primary-text: rgba(42, 32, 75, 0.8);
-	--secondary-text: #00235e;
-	--faded-text: rgba(35, 67, 90, 0.829);
-	--skill-icons: #322462;
-	--btn-text: rgba(255, 255, 255, 0.95);
-	--header-text: #9c94b6;
+	--secondary-text: #304570;
+	--faded-text: #364970;
+	--header-text: #9c93bd;
+	--contrast-text: rgba(255, 255, 255, 0.95);
+
 	--social-stop-1: rgba(67, 54, 112, 0.95);
 	--social-stop-2: rgba(41, 61, 94, 0.95);
+
 	--switch-stop-1: #ffcdb8;
 	--switch-stop-2: #bfb3ff;
 }
 
 .light {
-	--background: linear-gradient(252.44deg, #ebbba7 0%, #7e649f 100%);
-	--ellipse: linear-gradient(180deg, #ca9680 0%, #b6aee1 94.71%);
-	--btn: linear-gradient(95deg, rgba(197, 186, 250, 0.9) 0%, rgba(235, 187, 167, 0.9) 100%);
-	--dropdown: linear-gradient(134deg, #d5cdff 0%, #fde0d4 100%);
-	--dropdown-hover: linear-gradient(134deg, #cec4ff 0%, #ffcab4 100%);
-	--switch-icon: linear-gradient(180deg, #322462 0%, #1a5780 100%);
-	--primary-text: #695174;
-	--secondary-text: #524888;
-	--faded-text: #8e87b3;
-	--header-text: #695174;
-	--skill-icons: #68417a;
-	--btn-text: #433670;
-	--social-stop-1: rgba(182, 174, 225, 0.95);
-	--social-stop-2: rgba(228, 173, 150, 0.95);
+	--background: linear-gradient(252.44deg, #f0e8ff 0%, #fae6dd 100%);
+	/* --background: linear-gradient(252.44deg, #e3fdf5 0%, #ffe6fa 100%); */
+
+	--profile: linear-gradient(110deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.164) 100%);
+	--profile-border: rgb(255, 255, 255);
+
+	--filterBar: linear-gradient(
+		113.42deg,
+		rgba(255, 255, 255, 0.918) 0%,
+		rgba(255, 255, 255, 0.678) 100%
+	);
+
+	--dropdown: linear-gradient(134deg, #e0c4f0 0%, #f8dfd3 100%);
+	--pointer: #e8cde6;
+	--dropdown-hover: linear-gradient(134deg, #deb9f1 0%, #f5cebc 100%);
+
+	--btn: #dcc8e8;
+
+	--primary-text: #5f4e80;
+	--secondary-text: #564180;
+	--faded-text: #9c91b3;
+	--header-text: #68568c;
+	--contrast-text: #433670;
+
+	--social-stop-1: #dcc8e8;
+	--social-stop-2: #ffeacf;
+
 	--switch-stop-1: #322462;
 	--switch-stop-2: #1a5780;
 }

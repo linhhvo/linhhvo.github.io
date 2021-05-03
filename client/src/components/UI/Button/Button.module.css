@@ -3,9 +3,8 @@
 	background: var(--btn);
 	border-radius: 10px;
 	border: none;
-	color: var(--btn-text);
+	color: var(--contrast-text);
 	font-weight: 300;
-	/* font-size: clamp(0.75rem, 0.75vmax, 1rem); */
 	font-family: 'Poppins', sans-serif;
 	padding: 4px 10px;
 	cursor: pointer;

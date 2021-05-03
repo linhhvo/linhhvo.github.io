@@ -4,8 +4,8 @@
 	align-items: center;
 	justify-content: flex-end;
 	width: max(16vmax, 150px);
-	background: linear-gradient(110deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.1) 100%);
-	border-right: solid 1.5px rgba(255, 255, 255, 0);
+	background: var(--profile);
+	border-right: solid 1.5px var(--profile-border);
 	z-index: 2;
 }
 

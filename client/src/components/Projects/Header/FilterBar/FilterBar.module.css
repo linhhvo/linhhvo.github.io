@@ -11,12 +11,8 @@
 	border-radius: 30px;
 	width: clamp(200px, 15vmax, 300px);
 	padding: 0.2em 1.2em;
-	border: 1px solid rgba(255, 255, 255, 0.253);
-	background: linear-gradient(
-		113.42deg,
-		rgba(255, 255, 255, 0.651) 0%,
-		rgba(255, 255, 255, 0.438) 100%
-	);
+	border: 1px solid var(--profile-border);
+	background: var(--filterBar);
 	backdrop-filter: blur(100px);
 	position: relative;
 	z-index: 20;
