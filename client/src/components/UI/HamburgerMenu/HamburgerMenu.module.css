@@ -23,7 +23,7 @@
 .hamburger.isActive .hamburgerInner,
 .hamburger.isActive .hamburgerInner::before,
 .hamburger.isActive .hamburgerInner::after {
-	background-color: var(--btn-text);
+	background-color: var(--contrast-text);
 }
 
 .hamburgerBox {
@@ -43,7 +43,7 @@
 .hamburgerInner::after {
 	width: 40px;
 	height: 4px;
-	background-color: var(--btn-text);
+	background-color: var(--contrast-text);
 	border-radius: 4px;
 	position: absolute;
 	transition-property: transform;
