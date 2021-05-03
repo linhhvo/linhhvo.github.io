@@ -4,7 +4,6 @@
 .filterBtn {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1rem;
-	/* font-size: clamp(1rem, 0.75vmax, 2rem); */
 	color: var(--faded-text);
 	display: flex;
 	justify-content: space-between;
@@ -32,10 +31,4 @@
 
 .filterBtn path {
 	fill: var(--primary-text);
-}
-
-@media (max-width: 650px) {
-	.filterBtn {
-		/* border-radius: 3; */
-	}
 }

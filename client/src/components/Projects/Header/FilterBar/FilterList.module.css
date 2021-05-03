@@ -9,11 +9,6 @@
 	transition: all 0.4s ease-in;
 }
 
-.container ul {
-	/* padding-top: 0.5em; */
-	/* font-size: clamp(1rem, 0.75vmax, 2rem); */
-}
-
 .container ul:before {
 	content: '';
 	width: 0;
@@ -70,10 +65,4 @@
 	overflow: hidden;
 	padding: 0;
 	pointer-events: none;
-}
-
-@media (max-width: 650px) {
-	.container {
-		/* border-radius: 3vmin; */
-	}
 }
