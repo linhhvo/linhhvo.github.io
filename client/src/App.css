@@ -45,7 +45,7 @@
 }
 
 .light {
-	--background: linear-gradient(252.44deg, #f0e8ff 0%, #fae6dd 100%);
+	--background: linear-gradient(252.44deg, #e8dcff 0%, #ffdfd1 100%);
 	/* --background: linear-gradient(252.44deg, #e3fdf5 0%, #ffe6fa 100%); */
 
 	--profile: linear-gradient(110deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.164) 100%);
