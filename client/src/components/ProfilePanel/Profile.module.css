@@ -63,7 +63,7 @@
 		border: none;
 		z-index: 100;
 		background: var(--background);
-		color: var(--btn-text);
+		color: var(--contrast-text);
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 		justify-content: space-between;
