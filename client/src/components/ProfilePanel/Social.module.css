@@ -22,7 +22,7 @@
 
 @media (max-width: 650px) {
 	.container p {
-		color: var(--btn-text);
+		color: var(--contrast-text);
 	}
 
 	.container use {
