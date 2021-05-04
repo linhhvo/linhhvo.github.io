@@ -21,8 +21,9 @@ export const Project = ({project, reloadParent}) => {
 
             <div className={classes.btnContainer}>
                 {project.demo ? <Button text='view demo' link={project.demo} /> : null}
-                {project.sourceCode ? <Button text='source code' link={project.sourceCode} /> : null}
                 {project.report ? <Button text='view report' link={project.report} /> : null}
+                {project.sourceCode ? <Button text='source code' link={project.sourceCode} /> : null}
+                {project.dashboard ? <Button text='dashboard' link={project.dashboard} /> : null}
             </div>
 
         </div>
