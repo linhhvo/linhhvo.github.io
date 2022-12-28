@@ -89,10 +89,10 @@ export const GlobalProvider = ({children}) => {
                 payload: response.data
             });
         } catch (err) {
-            dispatch({
-                type: 'PROJECT_ERROR',
-                payload: err.response.data.error
-            });
+            // dispatch({
+            //     type: 'PROJECT_ERROR',
+            //     payload: err.response.data.error
+            // });
         }
     }
 
