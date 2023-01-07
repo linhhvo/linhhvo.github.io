@@ -20,7 +20,7 @@
 	fill: url(#gradient) currentColor;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	.container p {
 		color: var(--contrast-text);
 	}

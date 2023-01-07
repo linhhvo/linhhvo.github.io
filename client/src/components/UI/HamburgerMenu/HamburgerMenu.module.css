@@ -70,7 +70,7 @@
 	transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
 }
 
-@media (min-width: 651px) {
+@media (min-width: 751px) {
 	.hamburger {
 		display: none;
 	}

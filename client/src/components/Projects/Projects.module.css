@@ -5,9 +5,12 @@
 	grid-auto-rows: 28ch;
 	justify-content: center;
 	gap: clamp(30px, 5vmin, 45px);
-	height: 90vh;
+	/* height: 90vh; */
 	width: min(80vw, 1500px);
 	margin: auto;
+    margin-bottom: 20px;
+    /* border-style: solid;
+    border-color: red; */
 }
 
 .arrow {
@@ -22,10 +25,10 @@
 }
 
 .lastRow {
-	height: 0.1px;
+	height: 10px;
 	grid-column: 1 / -1;
 }
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	.projectsContainer {
 		grid-template-columns: repeat(auto-fit, 30ch);
 		grid-template-rows: 100px repeat(auto-fit, 30ch);
@@ -33,9 +36,9 @@
 		width: 100vw;
 	}
 
-	.lastRow {
+	/* .lastRow {
 		height: 50px;
-	}
+	} */
 
 	.arrow {
 		display: none;

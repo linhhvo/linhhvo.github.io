@@ -5,7 +5,7 @@
 	overflow: hidden;
 }
 
-.ellipse1 {
+/* .ellipse1 {
 	position: absolute;
 	width: 53%;
 	height: 94%;
@@ -28,8 +28,8 @@
 	z-index: 1;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	.ellipse1 {
 		display: none;
 	}
-}
+} */

@@ -1,7 +1,7 @@
 .button {
 	width: 48%;
 	background: var(--btn);
-	border-radius: 10px;
+	border-radius: 2px;
 	border: none;
 	color: var(--contrast-text);
 	font-weight: 300;

@@ -4,8 +4,6 @@
 	"description": "Backend for personal website",
 	"main": "server.js",
 	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
 		"client-install": "npm install --prefix client",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node ./server.js",

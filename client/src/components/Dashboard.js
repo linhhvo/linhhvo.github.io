@@ -1,12 +1,20 @@
 import React from 'react';
 import classes from './Dashboard.module.css';
+import {Experiences} from './Experiences/Experiences';
 import {Projects} from './Projects/Projects';
+import {ScrollBar} from './UI/ScrollBar/ScrollBar';
 
 export const Dashboard = () => {
     return (
-        <div className={classes.container}>
-            <Projects />
-        </div>
+        <React.Fragment>
+            <ScrollBar>
+                <div className={classes.container}>
+                    {/* <Experiences /> */}
+                    <Projects />
+                </div>
+            </ScrollBar>
+        </React.Fragment>
+
 
     );
 };
