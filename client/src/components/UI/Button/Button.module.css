@@ -15,6 +15,6 @@
 }
 
 .button:hover {
-	background: var(--dropdown);
+	background: var(--btn-hover);
 	color: var(--secondary-text);
 }

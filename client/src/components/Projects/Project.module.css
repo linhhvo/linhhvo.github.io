@@ -2,11 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: linear-gradient(
+	/* background: linear-gradient(
 		92.43deg,
 		rgba(255, 255, 255, 0.78) 2.38%,
 		rgba(255, 255, 255, 0.79) 98.42%
-	);
+	); */
+    background: var(--project-background);
 	box-shadow: 1.7vmin 1.7vmin 1.5vmin rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
 	align-items: center;

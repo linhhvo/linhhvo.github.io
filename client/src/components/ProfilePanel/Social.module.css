@@ -6,7 +6,7 @@
 
 .container p {
 	font-size: clamp(1.12rem, 1vmax, 1.75rem);
-	color: var(--faded-text);
+	color: var(--primary-text);
 	margin: clamp(0.75rem, 2.5vmin, 3rem) 0;
 }
 
@@ -21,11 +21,11 @@
 }
 
 .container:hover p {
-    filter: brightness(65%);
+    filter: brightness(20%);
 }
 
 .container:hover use {
-    filter: brightness(95%)
+    filter: brightness(90%)
 }
 @media (max-width: 750px) {
 	.container p {
@@ -39,5 +39,6 @@
 	.container:hover p,
 	.container:hover use {
 		opacity: 0.6;
+        filter: brightness(100%);
 	}
 }

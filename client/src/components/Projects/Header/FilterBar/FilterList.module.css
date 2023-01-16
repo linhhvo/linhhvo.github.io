@@ -5,7 +5,7 @@
 	top: clamp(80px, 9vmin, 100px);
 	width: clamp(200px, 15vmax, 300px);
 	margin: min(-33px, -1.25vmax) 0;
-	color: var(--secondary-text);
+	color: var(--faded-text);
 	transition: all 0.1s ease-in;
 }
 
@@ -56,7 +56,6 @@
 
 .disabled {
 	border-top: 0.5px solid var(--faded-text);
-	color: var(--faded-text);
 }
 
 .collapsed {

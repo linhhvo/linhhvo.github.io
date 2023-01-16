@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Dashboard.module.css';
-import {Experiences} from './Experiences/Experiences';
+// import {Experiences} from './Experiences/Experiences';
 import {Projects} from './Projects/Projects';
 import {ScrollBar} from './UI/ScrollBar/ScrollBar';
 
