@@ -1,6 +1,6 @@
-# fly.toml file generated for linhvo-website on 2023-01-15T20:11:29-05:00
+# fly.toml file generated for linhvo on 2023-01-15T22:51:03-05:00
 
-app = "linhvo-website"
+app = "linhvo"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
