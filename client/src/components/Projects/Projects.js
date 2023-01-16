@@ -1,7 +1,5 @@
 import React, {useState, useEffect, useRef, useContext} from 'react';
 import classes from './Projects.module.css';
-// import {ScrollBar} from '../UI/ScrollBar/ScrollBar';
-// import {ShowMore} from '../icons/ShowMore';
 import {Header} from './Header/Header';
 import {Project} from './Project';
 import {GlobalContext} from '../../context/GlobalState';
@@ -33,17 +31,11 @@ export const Projects = () => {
 
     return (
         <React.Fragment>
-            {/* <ScrollBar> */}
             <div className={classes.projectsContainer} ref={ref} id='projects'>
                 <Header />
 
                 {displayedProjects.map(project => <Project key={project._id} project={project} reloadParent={updateHeight} />)}
             </div>
-            {/* <div className={classes.lastRow}></div> */}
-            {/* </ScrollBar> */}
-            {/* <div className={classes.arrow}>
-                {scrollHeight > clientHeight ? <ShowMore /> : null}
-            </div> */}
 
         </React.Fragment>
     );

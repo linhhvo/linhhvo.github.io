@@ -20,6 +20,13 @@
 	fill: url(#gradient) currentColor;
 }
 
+.container:hover p {
+    filter: brightness(65%);
+}
+
+.container:hover use {
+    filter: brightness(95%)
+}
 @media (max-width: 750px) {
 	.container p {
 		color: var(--contrast-text);

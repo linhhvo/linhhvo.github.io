@@ -1,14 +1,65 @@
 .experiencesContainer {
-	height: 90vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 28ch);
+	grid-template-rows: auto;
+	justify-content: center;
+	gap: clamp(30px, 2vmin, 45px);
 	width: min(80vw, 1500px);
 	margin: auto;
-    margin-bottom: 10px;
-    /* border-style: solid;
-    border-color: orange; */
+    margin-bottom: 20px;
+}
+
+.experiencesContainer h1 {
+	grid-column: 1 / -1;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: var(--header-text);
+}
+
+.indExpContainer {
+    display: flex;
+	flex-direction: column;
+	background: linear-gradient(
+		92.43deg,
+		rgba(255, 255, 255, 0.78) 2.38%,
+		rgba(255, 255, 255, 0.79) 98.42%
+	);
+	box-shadow: 1.7vmin 1.7vmin 1.5vmin rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+    grid-column: 1 / -1;
+    padding: 10px 15px;
+}
+
+.indExpHeader {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.indExpHeader h2 {
+	font-size: 1.25rem;   
+}
+
+.divider {
+    height: 1.5px;
+    width: 28ch;
+    margin: 12px 0;
+    background: var(--btn);
+}
+
+.indExpContainer ul {
+    padding-left: 20px;
+    color: var(--secondary-text);
+    font-size: 0.8rem;
 }
 
 @media (max-width: 750px) {
 	.experiencesContainer {
 		width: 100vw;
 	}
+    .indExpHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

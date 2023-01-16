@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 
 import classes from './Profile.module.css';
 import profile_pic from '../../assets/profile.png';
+import resume from '../../assets/LinhVo_Resume.pdf';
 
 import {ThemeSwitch} from '../icons/ThemeSwitch';
 import {Social} from './Social';
@@ -18,6 +19,7 @@ export const Profile = () => {
                 <img className={classes.profilePic} src={profile_pic} alt="an illustration of myself" />
                 <p className={classes.name}>Linh Vo</p>
                 <div className={classes.iconContainer}>
+                    <Social name='Resume' href={resume} />
                     <Social name='Github' href='https://www.github.com/linhhvo' />
                     <Social name='Linkedin' href='https://www.linkedin.com/in/linhhvo' />
                     <Social name='Email' href='mailto: lhvo2112@gmail.com' />

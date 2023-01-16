@@ -25,11 +25,11 @@ export default (state, action) => {
                 displayedProjects: action.payload.data
             };
 
-        // case 'PROJECT_ERROR':
-        //     return {
-        //         ...state,
-        //         error: action.payload.error
-        //     };
+        case 'PROJECT_ERROR':
+            return {
+                ...state,
+                error: action.payload.error
+            };
 
         default:
             return state;

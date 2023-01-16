@@ -14,8 +14,6 @@
 .dark {
 	--background: linear-gradient(252.44deg, #1a5780 0.01%, #433670 100%);
 
-	--ellipse: linear-gradient(180deg, #082c46 0%, #382b67 94.71%);
-
 	--profile: linear-gradient(110deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.1) 100%);
 	--profile-border: rgba(255, 255, 255, 0);
 

@@ -4,13 +4,10 @@
 	grid-template-rows: 10vmin repeat(auto-fit, 28ch);
 	grid-auto-rows: 28ch;
 	justify-content: center;
-	gap: clamp(30px, 5vmin, 45px);
-	/* height: 90vh; */
+	gap: clamp(30px, 3vmin, 45px);
 	width: min(80vw, 1500px);
 	margin: auto;
     margin-bottom: 20px;
-    /* border-style: solid;
-    border-color: red; */
 }
 
 .arrow {
@@ -35,10 +32,6 @@
 		grid-auto-rows: 30ch;
 		width: 100vw;
 	}
-
-	/* .lastRow {
-		height: 50px;
-	} */
 
 	.arrow {
 		display: none;
